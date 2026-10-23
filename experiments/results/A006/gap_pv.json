@@ -1,0 +1,100 @@
+{
+ "note": "Post-hoc descriptive, D split only (C endpoint not computed under the preregistered A = empty stopping rule).",
+ "part": "gap_pv",
+ "native_gb_raw_invalid": {
+  "median": 0.010070419419442155,
+  "mean": 0.022290765764859503,
+  "q90": 0.048978623078523124
+ },
+ "native_gb_through_R4": {
+  "timing_R4_only": {
+   "median_frac": 0.010862253175576748,
+   "mean_frac": 0.023717099065915574,
+   "q75_frac": 0.025692775259380414,
+   "frac_zero": 0.0,
+   "mean_loglen": 3.9252171592607445
+  },
+  "timing_R4_plus_renewal": {
+   "median_frac": 0.020498209575184435,
+   "mean_frac": 0.031723945440418344,
+   "q75_frac": 0.03554539354208483,
+   "frac_zero": 0.0,
+   "mean_loglen": 3.49259590367579
+  }
+ },
+ "R": 4,
+ "pv10": {
+  "native_gb_spline": {
+   "logE": 5.902040919293568,
+   "pv_deg_s": 365.7832406485341,
+   "ci95_deg_s": [
+    356.51947020777993,
+    374.99918609546046
+   ],
+   "n_elig": 100,
+   "P": 100
+  },
+  "native_gb_linear_8_12": {
+   "logE": 5.900977356904775,
+   "pv_deg_s": 365.3944141585971,
+   "ci95_deg_s": [
+    355.95238894685855,
+    374.78680522799885
+   ],
+   "n_elig": 100,
+   "P": 100
+  },
+  "native_gbvr_spline": {
+   "logE": 5.798439762195811,
+   "pv_deg_s": 329.7846158716106,
+   "ci95_deg_s": [
+    319.5908138170656,
+    339.5097981184641
+   ],
+   "n_elig": 48,
+   "P": 50
+  },
+  "native_gbvr_linear_8_12": {
+   "logE": 5.794569457627496,
+   "pv_deg_s": 328.5107157471512,
+   "ci95_deg_s": [
+    319.4370268365222,
+    337.64613963974773
+   ],
+   "n_elig": 47,
+   "P": 50
+  }
+ },
+ "native_ratio_spline": {
+  "dhat": -0.1036011570977573,
+  "se": 0.019842464120821295,
+  "ratio_vr_over_gb": 0.9015848164254384,
+  "band": [
+   0.8727652907965037,
+   0.9313559897267031
+  ],
+  "band_c": 1.6372692225534289,
+  "estimable": true
+ },
+ "native_ratio_linear_8_12": {
+  "dhat": -0.10640789927727923,
+  "se": 0.019965080240230068,
+  "ratio_vr_over_gb": 0.8990578482257894,
+  "band": [
+   0.8691761679622251,
+   0.9299668401533024
+  ],
+  "band_c": 1.6930335190696824,
+  "estimable": true
+ },
+ "n_primary_gb_median": 57.0,
+ "wall_s": 4.304777557961643,
+ "_resources": {
+  "cpu_s_self": 3.223662,
+  "cpu_s_children": 34.030994,
+  "peak_rss_mib_self": 309.875,
+  "peak_rss_mib_children_max": 244.0390625,
+  "wall_s": 4.433491997886449
+ },
+ "_provisional": false
+}

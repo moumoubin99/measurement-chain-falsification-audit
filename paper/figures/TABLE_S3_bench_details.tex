@@ -1,0 +1,24 @@
+\begin{table}[ht]
+\centering
+\caption{\textbf{Benchmark details per generating truth} (26 replicates each; complements Table 3 of the main text). Oracle: the member-wise PV contrast $\delta^*$ estimated on all 100 participants from $K = 6$ independent batches, with Bonferroni $t$ intervals; it is resolved when every configuration of member contrasts inside the box of oracle intervals gives the same decision category (Supplementary Note~S4). Per-member band coverage pools all (replicate, member) pairs with $A_r \neq \varnothing$; the bracket is a replicate-bootstrap 95\% interval. ``Definite'' bounds count a member as covered only if the whole oracle interval lies inside the band (lower) or as uncovered only if the two are disjoint (upper). Simultaneous coverage asks whether the max-T band covers every retained member at once (nominal 0.90). Generating chains: Light \texttt{B1\_bw2\_60\_post\_a1}; Medium \texttt{B1\_bw4\_30\_post\_a1}; Heavy \texttt{B1\_bw4\_15\_post\_a1}; B2 \texttt{B2\_bw4\_40\_post\_a1}; the other two truths are out of family. Source: \texttt{R102/summary.json}.}
+\label{tab:s3}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.6cm}cccccc@{}}
+\toprule
+ & Light & Medium & Heavy & B2 & Vel.-adaptive & Kalman RTS \\
+\midrule
+Oracle resolved, $k/26$ & 25 & 24 & 21 & 23 & 25 & 21 \\
+Oracle unresolved / not run & 0 / 0 & 0 / 0 & 0 / 0 & 0 / 0 & 0 / 0 & 0 / 0 \\
+Not applicable ($A_r = \varnothing$), $k/26$ & 1 & 2 & 5 & 3 & 1 & 5 \\
+Support failure, $k/26$ & 0 & 0 & 0 & 0 & 0 & 0 \\
+Per-member band coverage (plug-in) & 0.931 & 0.936 & 0.871 & 0.943 & 0.932 & 0.918 \\
+\quad 95\% bootstrap interval & [0.82, 1.00] & [0.80, 1.00] & [0.72, 0.99] & [0.84, 1.00] & [0.84, 1.00] & [0.79, 1.00] \\
+\quad definite lower / upper & 0.93 / 0.94 & 0.93 / 0.94 & 0.84 / 0.95 & 0.93 / 0.95 & 0.90 / 0.96 & 0.91 / 0.93 \\
+Simultaneous coverage (plug-in) & 0.92 (25) & 0.92 (24) & 0.81 (21) & 0.83 (23) & 0.84 (25) & 0.90 (21) \\
+\quad definite bounds & [0.88, 0.92] & [0.92, 0.96] & [0.76, 0.86] & [0.83, 0.83] & [0.80, 0.88] & [0.86, 0.90] \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

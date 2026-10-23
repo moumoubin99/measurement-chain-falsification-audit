@@ -1,0 +1,90 @@
+{
+ "timings": {
+  "gbvr_native_wall_s": 2.066371393855661,
+  "gbvr_native_cpu_s": 17.488913724198937,
+  "cache_wall_s": 1391.6040090443566,
+  "cache_task_wall_s": 125660.0920350682,
+  "cache_cpu_s": 21890.923690209,
+  "adm_wall_s": 4923.917755952105,
+  "adm_task_wall_s": 544884.1014999482,
+  "adm_cpu_s": 76636.013415877,
+  "bench_wall_s": 5109.029467639048
+ },
+ "rep_cpu_s_mean": 4354.780228732167,
+ "rep_timings": [
+  {
+   "pseudo_target_s": 4.347613559104502,
+   "admissibility_s": 2120.802908351179,
+   "endpoint_s": 63.42240478191525,
+   "bands_s": 2.9140654802322388,
+   "oracle_s": 1558.7793951500207,
+   "total_s": 3750.287459807936,
+   "cpu_s": 3750.227618264
+  },
+  {
+   "pseudo_target_s": 4.298401043750346,
+   "admissibility_s": 3476.065904618241,
+   "endpoint_s": 62.25989256519824,
+   "bands_s": 2.7392585300840437,
+   "oracle_s": 1498.3367922119796,
+   "total_s": 5043.718325119,
+   "cpu_s": 5043.605976725
+  },
+  {
+   "pseudo_target_s": 4.257428390905261,
+   "admissibility_s": 1917.1146792452782,
+   "endpoint_s": 75.72242763312533,
+   "bands_s": 2.779254723805934,
+   "oracle_s": 1859.9222220643423,
+   "total_s": 3859.8139296071604,
+   "cpu_s": 3859.76613955
+  },
+  {
+   "pseudo_target_s": 4.414044235367328,
+   "admissibility_s": 2369.188099742867,
+   "endpoint_s": 59.16767987422645,
+   "bands_s": 2.7192980139516294,
+   "oracle_s": 1497.6062021981925,
+   "total_s": 3933.1134043033235,
+   "cpu_s": 3933.049664735
+  },
+  {
+   "pseudo_target_s": 4.865892217960209,
+   "admissibility_s": 2493.1789884176105,
+   "endpoint_s": 75.49270462989807,
+   "bands_s": 3.6878005657345057,
+   "oracle_s": 1856.2236563130282,
+   "total_s": 4433.476768922992,
+   "cpu_s": 4433.42670229
+  },
+  {
+   "pseudo_target_s": 3.137851905077696,
+   "admissibility_s": 3047.1655497439206,
+   "endpoint_s": 81.35878683906049,
+   "bands_s": 2.780153555329889,
+   "oracle_s": 1974.284252637066,
+   "total_s": 5108.751238676254,
+   "cpu_s": 5108.605270829
+  }
+ ],
+ "mean_A_bench": 46.5,
+ "calib_cpu_h": 27.368593640579444,
+ "bench_cpu_h_600": 725.7967047886946,
+ "total_projected_cpu_h": 760.165298429274,
+ "gate_cpu_h": 250.0,
+ "members_profiled": 276,
+ "member_scale": 1.0,
+ "note": "admissibility / cache costs scale with members; replicate cost scales with |A_r| (oracle)",
+ "within_gate": false,
+ "cpu_basis": "process_time per task (cache, admissibility, replicate); wall times reported separately",
+ "peak_tree_rss_mib": 93621.30078125,
+ "reps_60_per_truth_cpu_h": 469.84661651379616,
+ "_resources": {
+  "cpu_s_self": 77.636743,
+  "cpu_s_children": 124817.18285699999,
+  "peak_rss_mib_self": 865.9296875,
+  "peak_rss_mib_children_max": 1011.4375,
+  "wall_s": 11440.074460339267
+ },
+ "_provisional": false
+}

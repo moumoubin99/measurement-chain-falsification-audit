@@ -1,0 +1,5 @@
+numpy
+scipy
+pandas
+matplotlib
+# Optional for expensive raw-data runs: numba

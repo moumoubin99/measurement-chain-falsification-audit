@@ -1,0 +1,30 @@
+{
+ "n_recordings": 322,
+ "n_dev": 100,
+ "n_conf": 222,
+ "E_set": 108.0,
+ "dt_median": 1.0,
+ "dt_frac1_median": 1.0,
+ "dt_nonpos_total": 0,
+ "dt_max_max": 1.0,
+ "val_codes_total": {
+  "0": 31809071,
+  "4": 746473
+ },
+ "invalid_median": 0.010937266076909202,
+ "invalid_q90": 0.048621630711892475,
+ "dur_s_median": 101.085,
+ "n_trans_median": 99.0,
+ "dwell_med_median": 1000.0,
+ "dev_frac_ge10_win512": 0.98,
+ "dev_frac_ge10_win256": 1.0,
+ "dev_win512_median": 23.0,
+ "dev_latency_median": 194.5,
+ "dev_landing_median": 1.1365109888418294,
+ "dev_primary_median": 57.0,
+ "dev_n812_total": 2314,
+ "dev_corr_x_min": 0.566944984020457,
+ "dev_corr_y_min": 0.5595072773770424,
+ "runtime_s": 15.384099652059376,
+ "_provenance": "Reconstructed verbatim from experiments/results/logs/R001_gb.log (summary dict printed by r001_audit_gb.py on the server, 2026-10-21); the server-side JSON was not copied back."
+}

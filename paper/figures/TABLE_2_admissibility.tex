@@ -1,0 +1,33 @@
+\begin{table}[ht]
+\centering
+\caption{\textbf{Fixation-hold admissibility of the declared 276-member family.} A member is admissible if $\Lambda \le c$, i.e.\ $\Lambda/c \le 1$. Block A is the prespecified, code-locked calibration on D and the lock-specified diagnostic check (R203) on C; block B contains post hoc diagnostic recalibrations (A006) that are not decisions; block C is the finite-sample reference from the benchmark with known truths. R203 and A006 on C evaluate nested candidate subsets on the same confirmatory split, not independent replications. Rows bound by \texttt{gap\_frac\_median} share one value of $\Lambda$, because the missingness coordinates do not depend on the member$^{c}$; their $\Lambda/c$ differ only through $c$. Binding coordinate = coordinate attaining $\Lambda$ (counts over members). Sources: \texttt{R004/calibration.json}, \texttt{R203/c\_hold\_lambda.json}, \texttt{A006/d\_adm.json}, \texttt{A006/c\_adm.json}, \texttt{R102/reps/*.json}.}
+\label{tab:admissibility}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.0cm}lcc>{\raggedright\arraybackslash}p{4.9cm}@{}}
+\toprule
+Analysis & Members & Admissible & $\Lambda/c$: min [range] & Binding coordinate \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{A. Prespecified 12-coordinate calibration}} \\
+D split, full family & 276 & 0 & 2.72 [2.72, 23.5] & \texttt{ac1} 144; \texttt{gap\_frac\_median} 99; \texttt{bp\_60\_125} 22; \texttt{ac2} 11 \\
+C split, R203 lock-specified hold check (D-best) & 10 & 0 & 4.44 [4.44, 4.49] & \texttt{gap\_frac\_median} (all)$^{a}$ \\
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{B. Post hoc diagnostic recalibrations (A006)}} \\
+C split, 12 coordinates (D-selected) & 15 & 0 & 4.41 [4.41, 4.49] & \texttt{gap\_frac\_median} (all) \\
+D split, clean window (1--10), own $c_{10}$ & 276 & 0 & 1.23 (filtered 1.46) & \texttt{ac1} 149; \texttt{ac2} 58; \texttt{bp\_4\_10} 47; \texttt{bp\_60\_125} 22 \\
+C split, clean window (1--10), own $c_{10}$ & 15 & 0 & 2.67 (filtered 4.54--4.98) & \texttt{bp\_4\_10} (all) \\
+D split, consistent population & 276 & 0 & 2.72 & \texttt{ac1} 144; \texttt{gap\_frac\_median} 99; \texttt{bp\_60\_125} 22; \texttt{ac2} 11 \\
+C split, consistent population & 15 & 0 & 5.06 [5.06, 5.19] & \texttt{gap\_frac\_median} (all) \\
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{C. Benchmark replicates with no admissible member ($A_r = \varnothing$)}} \\
+In-family truths (false failures) & 11 of 104 & 0 & 1.03--1.51$^{b}$ & --- \\
+Out-of-family truths & 6 of 52 & 0 & 1.04--1.24$^{b}$ & --- \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\smallskip
+\raggedright\footnotesize
+$^{a}$R203 $\Lambda/c$ values are reproduced exactly by the A006 recomputation, which records the binding coordinate. $^{b}$Per replicate, the minimum $\Lambda/c$ over the 276 members; 1.51 is the observed maximum over the 11 in-family replicates, not a bound. Benchmark pseudo-headset data were generated with the family's own missingness model, so the missingness coordinates are matched in expectation by construction; block C is therefore no reference for failures that are set by \texttt{gap\_frac\_median}, as in blocks A and B. $^{c}$On D, $z = 8.43$ for \texttt{gap\_frac\_median} and $z = 2.51$ for \texttt{gap\_loglen\_mean} for every member; 99 members are tied at $\Lambda = 8.43$, with $c$ of 3.02--3.10. On C, $\Lambda = 15.57$ for all 15 candidates (14.80 under the consistent population), with $c$ of 3.47--3.53. Binding coordinates: \texttt{ac1}, \texttt{ac2}, lag-1 and lag-2 autocorrelation of horizontal sample-to-sample velocity (coordinates 9--10); \texttt{bp\_4\_10}, \texttt{bp\_60\_125}, log band power of horizontal gaze position at 4--10 and 60--125\,Hz (coordinates 5 and 8); \texttt{gap\_frac\_median}, median gap fraction on the 4\,ms grid (coordinate 11).
+\end{table}

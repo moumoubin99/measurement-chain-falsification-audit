@@ -1,0 +1,22 @@
+{
+ "n_gbvr": 357,
+ "n_gb": 222,
+ "R": 20,
+ "B": 2000,
+ "stream": 5000,
+ "A": [],
+ "eye": "right",
+ "gb_session": 1,
+ "gb_missing_session": [],
+ "diagnostic": true,
+ "decision": "CALIBRATION FAILURE",
+ "tag": "",
+ "_resources": {
+  "cpu_s_self": 22.762281,
+  "cpu_s_children": 141.982688,
+  "peak_rss_mib_self": 306.80078125,
+  "peak_rss_mib_children_max": 216.9765625,
+  "wall_s": 287.50337668228894
+ },
+ "_provisional": false
+}

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.conda/
+review_outputs/
+raw/
+data/collected/
+*.zip
+*.csv
+*.xlsx
+*.pkl
+*.pickle
+*.bundle
+*.log
+.env
+.secrets/

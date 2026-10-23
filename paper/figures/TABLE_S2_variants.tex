@@ -1,0 +1,30 @@
+\begin{table}[ht]
+\centering
+\caption{\textbf{Post hoc admissibility variants on the development (D) and confirmatory (C) splits.} ``Full'' repeats the prespecified test; ``clean window'' drops the two missingness coordinates and recalibrates its own critical value $c_{10}$; ``consistent population'' computes bootstrap and point estimate on the same eligible participants. C is assessed for the 15 development-selected candidates (the union of the 10 lock-specified R203 members and the 10 members with the lowest clean-window ratio on D). ``min (filtered)'' is the minimum over members with a non-identity filter. Quantiles are median [10th, 90th percentiles] over members; $c$ is the median critical value. Binding: coordinate attaining the maximum, counts over members. The last block gives, for the D members not assessed on C, the clean-window ratio by noise exponent. Sources: \texttt{A006/d\_adm.json}, \texttt{A006/c\_adm.json}. These are post hoc diagnostics, not decisions.}
+\label{tab:s2}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.6cm}rrrrr>{\raggedright\arraybackslash}p{3.4cm}@{}}
+\toprule
+Variant & Admissible & min $\Lambda/c$ & min (filtered) & $\Lambda/c$ median [P10, P90] & $c$ & Binding coordinate \\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Development split D, all 276 members}} \\
+\quad Full 12-coordinate test (as prespecified) & 0/276 & 2.716 & 2.716 & 3.00 [2.74, 13.05] & 3.05 & \texttt{ac1} 144, \texttt{gap\_frac\_median} 99, \texttt{bp\_60\_125} 22, \texttt{ac2} 11 \\
+\quad Clean window, coordinates 1--10 ($c_{10}$) & 0/276 & 1.227 & 1.459 & 3.33 [1.66, 14.16] & 2.77 & \texttt{ac1} 149, \texttt{ac2} 58, \texttt{bp\_4\_10} 47, \texttt{bp\_60\_125} 22 \\
+\quad Consistent bootstrap/point-estimate population & 0/276 & 2.716 & 2.716 & 3.00 [2.74, 13.05] & 3.05 & \texttt{ac1} 144, \texttt{gap\_frac\_median} 99, \texttt{bp\_60\_125} 22, \texttt{ac2} 11 \\
+\addlinespace
+\multicolumn{7}{@{}l}{\textit{Confirmatory split C, 15 development-selected candidates}} \\
+\quad Full 12-coordinate test (as prespecified) & 0/15 & 4.413 & 4.437 & 4.46 [4.44, 4.49] & 3.49 & \texttt{gap\_frac\_median} 15 \\
+\quad Clean window, coordinates 1--10 ($c_{10}$) & 0/15 & 2.665 & 4.543 & 4.75 [4.55, 4.93] & 2.77 & \texttt{bp\_4\_10} 15 \\
+\quad Consistent bootstrap/point-estimate population & 0/15 & 5.059 & 5.060 & 5.12 [5.06, 5.18] & 2.89 & \texttt{gap\_frac\_median} 15 \\
+\addlinespace
+\multicolumn{7}{@{}l}{\textit{D split, clean window, the 261 members not among the C candidates, by noise exponent}} \\
+\quad $\alpha = 0$ & 0/55 & 1.591 & 1.591 & 1.68 [1.63, 13.53] & --- & --- \\
+\quad $\alpha = 0.5$ & 0/68 & 1.665 & 1.665 & 1.79 [1.68, 13.10] & --- & --- \\
+\quad $\alpha = 1$ & 0/69 & 1.751 & 3.048 & 3.28 [3.11, 14.84] & --- & --- \\
+\quad $\alpha = 1.5$ & 0/69 & 4.459 & 5.795 & 5.92 [5.83, 15.66] & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

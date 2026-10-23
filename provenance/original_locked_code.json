@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "historical_commit": "d194a794f4ca346f2f15c626093eb382ac841962",
+  "combined_sha256": "127d438f03feaf0e543b42f67427b803403bb7ba651ef97456db89b4abed2fa7",
+  "file_sha256": {
+    "kincost/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kincost/benchmark.py": "6f02abfb14b2cbbe96c009f1f3163b93def76f7e0d2a1dfb504b14d1e47de4b5",
+    "kincost/calibrate.py": "1cb9f05d1eafe80abc7be369aa6dff5fc00e714ce9bb20d06cc2f62e87cb00f5",
+    "kincost/chain.py": "c92232b1df6e3ef4a402b1f2dbc1df5cd914699b99cf8baebc5e016f0dcb304f",
+    "kincost/detector.py": "c48bc296df42795111c9839535437f82458d87c5e56ce8bcd5f9f0915cbe40d0",
+    "kincost/endpoint.py": "5762052d0c98bf7a5ba05268d222db58821e65647760b47ac4893b433faeecf4",
+    "kincost/fastfit.py": "4b296c18569574e0c7984799ab62f14a519cffddffa26f20e43cd42729e2db36",
+    "kincost/holds.py": "246eeca823aec931a931ed4a60fcada08dd27bf1bc681853f80df59b9b0fe168",
+    "kincost/io_data.py": "da830c02a1f32c8cec31b50394856b2c274575bb312e5930481fa270ca2b7a0a",
+    "kincost/pipeline.py": "016270ae421e313526344c3834030b9c89f6891adc61e9f59aeabde932032884",
+    "kincost/runs/common.py": "60f5104cfd70711e21b96bd32c68335a9da007a26c3e0604c1e5da3edf8dc63d",
+    "kincost/runs/r006_ladder.py": "9e5502de2103ae9c60fb964bb87a6cd8c0186dbe874f96c0bf7ed87811e34d0a",
+    "kincost/runs/r102_benchmark.py": "b3c4281efbb2974663c592d31438a36dbface4d2b00967108e85a3fda185e660",
+    "kincost/runs/r104_ladder_real.py": "741b4003384136bb54846e3b3904b60e83194df0ca67be88ccfb980951dfd009",
+    "kincost/runs/r105_lock.py": "a4dbf76f4551e60f9f007146eae22193474426195c35cd73ab15c14caca13cf6",
+    "kincost/runs/r201_confirm.py": "288e8bdd89a076bc5ce5298eb72c89bd0803b55701d541be8c475d188a6f9dad",
+    "kincost/synth.py": "ca258947ff6d4b748b05b09995323c978264b24bc4a2937e67e82821a49888d1"
+  },
+  "verification": "All 17 exported locked source files are byte-identical to their R105 hashes",
+  "public_git_history": "New review-export history; original Git history and bundle excluded"
+}

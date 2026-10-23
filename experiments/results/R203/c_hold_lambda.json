@@ -1,0 +1,276 @@
+{
+ "members": [
+  {
+   "mid": 12,
+   "name": "B1_bw2_15_post_a0",
+   "Lambda": 15.569010883624044,
+   "c": 3.482652926521824,
+   "Lambda_over_c": 4.4704457240225315,
+   "admissible_C": false,
+   "eta_C": [
+    -1.7569942121656303,
+    0.4143980291501627,
+    -1.6912258227596546,
+    0.48294210532097465
+   ],
+   "flags": {
+    "boundary": false,
+    "distinct_optima": false,
+    "ill_conditioned": false
+   },
+   "D_Lambda_over_c": 2.7310225810625774
+  },
+  {
+   "mid": 20,
+   "name": "B1_bw2_20_post_a0",
+   "Lambda": 15.569010883624044,
+   "c": 3.4663914047499924,
+   "Lambda_over_c": 4.491417461481657,
+   "admissible_C": false,
+   "eta_C": [
+    -1.7584726529035788,
+    0.41487831140590054,
+    -1.6916636077606193,
+    0.4809657665095133
+   ],
+   "flags": {
+    "boundary": false,
+    "distinct_optima": false,
+    "ill_conditioned": false
+   },
+   "D_Lambda_over_c": 2.7277389347442815
+  },
+  {
+   "mid": 84,
+   "name": "B1_bw4_15_post_a0",
+   "Lambda": 15.569010883624044,
+   "c": 3.482559949238653,
+   "Lambda_over_c": 4.470565075851083,
+   "admissible_C": false,
+   "eta_C": [
+    -1.7566829614106085,
+    0.414573626667808,
+    -1.6915435837476245,
+    0.4846143432464802
+   ],
+   "flags": {
+    "boundary": false,
+    "distinct_optima": false,
+    "ill_conditioned": false
+   },
+   "D_Lambda_over_c": 2.716356224737097
+  },
+  {
+   "mid": 92,
+   "name": "B1_bw4_20_post_a0",
+   "Lambda": 15.569010883624044,
+   "c": 3.491471051868703,
+   "Lambda_over_c": 4.459155081721559,
+   "admissible_C": false,
+   "eta_C": [
+    -1.758571942202135,
+    0.4149048483107214,
+    -1.6916883981000843,
+    0.4813255586212868
+   ],
+   "flags": {
+    "boundary": false,
+    "distinct_optima": false,
+    "ill_conditioned": false
+   },
+   "D_Lambda_over_c": 2.727578487696948
+  },
+  {
+   "mid": 172,
+   "name": "B1_ma4_post_a0",
+   "Lambda": 15.569010883624044,
+   "c": 3.5033250350007137,
+   "Lambda_over_c": 4.444066915880922,
+   "admissible_C": false,
+   "eta_C": [
+    -1.761386118525632,
+    0.41562989128040784,
+    -1.6934603740089158,
+    0.4827586521070048
+   ],
+   "flags": {
+    "boundary": false,
+    "distinct_optima": false,
+    "ill_conditioned": false
+   },
+   "D_Lambda_over_c": 2.7318624581011868
+  },
+  {
+   "mid": 180,
+   "name": "B1_ma5_post_a0",
+   "Lambda": 15.569010883624044,
+   "c": 3.4768357945387196,
+   "Lambda_over_c": 4.477925275642654,
+   "admissible_C": false,
+   "eta_C": [
+    -1.7591761038926477,
+    0.41483721584117594,
+    -1.692588681268738,
+    0.4820686600891722
+   ],
+   "flags": {
+    "boundary": false,
+    "distinct_optima": false,
+    "ill_conditioned": false
+   },
+   "D_Lambda_over_c": 2.7276781730217317
+  },
+  {
+   "mid": 184,
+   "name": "B2_bw2_15_post_a0",
+   "Lambda": 15.569010883624044,
+   "c": 3.482652926521824,
+   "Lambda_over_c": 4.4704457240225315,
+   "admissible_C": false,
+   "eta_C": [
+    -1.7572753515893167,
+    0.41441138022803964,
+    -1.6913730675133671,
+    0.4829795945732233
+   ],
+   "flags": {
+    "boundary": false,
+    "distinct_optima": false,
+    "ill_conditioned": false
+   },
+   "D_Lambda_over_c": 2.7313845919861435
+  },
+  {
+   "mid": 188,
+   "name": "B2_bw2_20_post_a0",
+   "Lambda": 15.569010883624044,
+   "c": 3.4663914047499924,
+   "Lambda_over_c": 4.491417461481657,
+   "admissible_C": false,
+   "eta_C": [
+    -1.7585515098967859,
+    0.4148267058058152,
+    -1.691688267635511,
+    0.48117649587126227
+   ],
+   "flags": {
+    "boundary": false,
+    "distinct_optima": false,
+    "ill_conditioned": false
+   },
+   "D_Lambda_over_c": 2.7279159253551235
+  },
+  {
+   "mid": 220,
+   "name": "B2_bw4_15_post_a0",
+   "Lambda": 15.569010883624044,
+   "c": 3.4825654158854147,
+   "Lambda_over_c": 4.470558058323148,
+   "admissible_C": false,
+   "eta_C": [
+    -1.756686196134004,
+    0.41457818926647905,
+    -1.6916579796629465,
+    0.48458817690214984
+   ],
+   "flags": {
+    "boundary": false,
+    "distinct_optima": false,
+    "ill_conditioned": false
+   },
+   "D_Lambda_over_c": 2.7158947395571182
+  },
+  {
+   "mid": 224,
+   "name": "B2_bw4_20_post_a0",
+   "Lambda": 15.569010883624044,
+   "c": 3.4890030723317778,
+   "Lambda_over_c": 4.462309307517729,
+   "admissible_C": false,
+   "eta_C": [
+    -1.7585953993592898,
+    0.41492206149763683,
+    -1.6917453671638893,
+    0.48143713150777867
+   ],
+   "flags": {
+    "boundary": false,
+    "distinct_optima": false,
+    "ill_conditioned": false
+   },
+   "D_Lambda_over_c": 2.7273221317162597
+  }
+ ],
+ "basis": "A u the 10 lowest D Lambda/c members",
+ "in_A": [
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false,
+  false
+ ],
+ "n_gbvr": 357,
+ "n_gb": 222,
+ "B": 2000,
+ "wall_s": 10165.986332618166,
+ "bootstrap_setup": {
+  "n_gb": 222,
+  "n_gb_eligible": 208,
+  "n_vr": 357,
+  "n_vr_eligible": 355,
+  "sd_fit_raw": [
+   0.02639660284011343,
+   0.032116607319623236,
+   0.040218869278121454,
+   0.04679876323536259
+  ],
+  "sd_fit": [
+   0.02639660284011343,
+   0.032116607319623236,
+   0.040218869278121454,
+   0.04679876323536259
+  ],
+  "native_coords": [
+   -2.0976853909869715,
+   -2.0168304181275194,
+   0.6534569400648071,
+   0.7579051190462183,
+   -5.669308322615851,
+   -5.56801663133701,
+   -5.970909245464776,
+   -5.719208919100778,
+   -0.250181117657976,
+   -0.09987704819156604,
+   0.0029934300042763285,
+   2.932322970696252
+  ],
+  "native_boot_sd": [
+   0.02639660284011343,
+   0.032116607319623236,
+   0.040218869278121454,
+   0.04679876323536259,
+   0.049489498853436426,
+   0.07344966266121578,
+   0.06541601731002547,
+   0.06736207880975444,
+   0.009591263903869052,
+   0.014676482091779856,
+   0.00031687253998061746,
+   0.0677341891648475
+  ],
+  "native_boot_nonfinite": 0
+ },
+ "_resources": {
+  "cpu_s_self": 29.541057,
+  "cpu_s_children": 6971.2446709999995,
+  "peak_rss_mib_self": 306.78515625,
+  "peak_rss_mib_children_max": 266.34765625,
+  "wall_s": 10174.60649447795
+ },
+ "_provisional": false
+}

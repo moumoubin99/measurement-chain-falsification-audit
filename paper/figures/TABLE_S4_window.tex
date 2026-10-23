@@ -1,0 +1,32 @@
+\begin{table}[ht]
+\centering
+\caption{\textbf{Post hoc window-placement diagnostic.} For each in-family truth, the generating chain is applied to native GazeBase with the benchmark's own geometry and noise, holds are re-extracted with native-style (sparser) versus degraded-style window placement, and $\eta$ is refitted. Entries are the refitted hold discrepancy on spectral-shape coordinates 5--10 (native-style minus degraded-style placement, the same direction as the real-data discrepancy, simulated minus GazeBaseVR), in three units: the benchmark standard error $s_{\mathrm{bench}}$, the development-split standard error $s_D$ and the confirmatory-split standard error $s_C$. The underlying offset is a population quantity, so its standardised size grows with the sample size of the split. With identical placement the discrepancy vanishes (control column). The largest magnitude rises with filter settling time. It stays below the median clean-window critical value $c_{10}$ (2.77 on D, 2.77 on C) in D units, but exceeds it in C units, mainly through the lag-1 autocorrelation; in C units the 4--10\,Hz offset is at most 1.98. The entries show a settling-ordered discrepancy under jointly changed placement and window count and do not apportion Stage-1 exclusion. Window counts per recording (median): native-style 22 (windows placed on native GazeBase that remain usable under the degraded validity mask; 23 placed before the mask), degraded-style 40 (windows placed on the degraded signal itself). Eligible recordings: native 98, degraded 100. Control: identical placement reproduces the cached hold coordinates (maximum relative error shown). Source: \texttt{A006/window.json}.}
+\label{tab:s4}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}lrrrrrrrr@{}}
+\toprule
+Truth & 4--10 Hz & 10--30 Hz & 30--60 Hz & 60--125 Hz & lag-1 AC & lag-2 AC & max $|\cdot|$ & control err. \\
+\midrule
+\multicolumn{9}{@{}l}{\textit{benchmark scale ($s_{\mathrm{bench}}$)}} \\
+Light & -0.39 & -0.19 & +0.08 & -0.06 & -0.71 & -0.66 & 0.71 & $8.2\times10^{-12}$ \\
+B2 & -0.33 & -0.03 & +0.16 & +0.36 & -0.89 & -0.71 & 0.89 & $1.2\times10^{-12}$ \\
+Medium & -0.34 & +0.05 & +0.09 & +0.28 & -0.78 & -1.01 & 1.01 & $4.5\times10^{-13}$ \\
+Heavy & -0.39 & -0.12 & +0.15 & +0.18 & -0.96 & -1.41 & 1.41 & $7.3\times10^{-12}$ \\
+\midrule
+\multicolumn{9}{@{}l}{\textit{development scale ($s_D$, member's own R004 standard errors)}} \\
+Light & -0.64 & -0.31 & +0.14 & -0.09 & -1.16 & -1.07 & 1.16 &  \\
+B2 & -0.54 & -0.04 & +0.26 & +0.59 & -1.45 & -1.15 & 1.45 &  \\
+Medium & -0.55 & +0.09 & +0.14 & +0.45 & -1.27 & -1.65 & 1.65 &  \\
+Heavy & -0.64 & -0.19 & +0.25 & +0.30 & -1.57 & -2.29 & 2.29 &  \\
+\midrule
+\multicolumn{9}{@{}l}{\textit{confirmatory scale ($s_C$, median over the 15 C candidates)}} \\
+Light & -1.98 & -0.86 & +0.32 & -0.29 & -3.08 & -1.42 & 3.08 &  \\
+B2 & -1.66 & -0.11 & +0.63 & +1.82 & -3.85 & -1.54 & 3.85 &  \\
+Medium & -1.71 & +0.24 & +0.34 & +1.39 & -3.38 & -2.20 & 3.38 &  \\
+Heavy & -1.94 & -0.52 & +0.60 & +0.90 & -4.17 & -3.04 & 4.17 &  \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

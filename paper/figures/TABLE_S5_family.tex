@@ -1,0 +1,60 @@
+\begin{table}[ht]
+\centering
+\caption{\textbf{Enumeration of the declared measurement-chain family.} Every filter is combined with the listed noise placement(s) and with the four noise exponents $\alpha \in \{0, 0.5, 1, 1.5\}$, giving 276 members. Settling time is the 2\% step-response settling time of the causal filter at its operating rate; the slowest is 105\,ms, which sets the settling exclusion after valid-run starts to 108\,ms (the larger of 100\,ms and the slowest settling time, rounded up to the 4\,ms grid). Generated from \texttt{kincost/chain.py}.}
+\label{tab:s5}
+\footnotesize
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Filter & Noise placement & Members & Settling (ms) \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Branch B1 (filtered at 250\,Hz), 184 members}} \\
+\quad Identity & pre and post & 8 & 0 \\
+\quad Butterworth order 2, 15 Hz & pre and post & 8 & 64 \\
+\quad Butterworth order 2, 20 Hz & pre and post & 8 & 48 \\
+\quad Butterworth order 2, 25 Hz & pre and post & 8 & 36 \\
+\quad Butterworth order 2, 30 Hz & pre and post & 8 & 32 \\
+\quad Butterworth order 2, 40 Hz & pre and post & 8 & 24 \\
+\quad Butterworth order 2, 50 Hz & pre and post & 8 & 16 \\
+\quad Butterworth order 2, 60 Hz & pre and post & 8 & 16 \\
+\quad Butterworth order 2, 80 Hz & pre and post & 8 & 16 \\
+\quad Butterworth order 2, 100 Hz & pre and post & 8 & 28 \\
+\quad Butterworth order 4, 15 Hz & pre and post & 8 & 104 \\
+\quad Butterworth order 4, 20 Hz & pre and post & 8 & 80 \\
+\quad Butterworth order 4, 25 Hz & pre and post & 8 & 64 \\
+\quad Butterworth order 4, 30 Hz & pre and post & 8 & 52 \\
+\quad Butterworth order 4, 40 Hz & pre and post & 8 & 40 \\
+\quad Butterworth order 4, 50 Hz & pre and post & 8 & 40 \\
+\quad Butterworth order 4, 60 Hz & pre and post & 8 & 32 \\
+\quad Butterworth order 4, 80 Hz & pre and post & 8 & 32 \\
+\quad Butterworth order 4, 100 Hz & pre and post & 8 & 40 \\
+\quad Moving average, 2 samples & pre and post & 8 & 4 \\
+\quad Moving average, 3 samples & pre and post & 8 & 8 \\
+\quad Moving average, 4 samples & pre and post & 8 & 12 \\
+\quad Moving average, 5 samples & pre and post & 8 & 16 \\
+\multicolumn{4}{@{}l}{\textit{Branch B2 (filtered at 1000\,Hz), 92 members}} \\
+\quad Butterworth order 2, 15 Hz & post & 4 & 63 \\
+\quad Butterworth order 2, 20 Hz & post & 4 & 47 \\
+\quad Butterworth order 2, 25 Hz & post & 4 & 38 \\
+\quad Butterworth order 2, 30 Hz & post & 4 & 32 \\
+\quad Butterworth order 2, 40 Hz & post & 4 & 24 \\
+\quad Butterworth order 2, 50 Hz & post & 4 & 19 \\
+\quad Butterworth order 2, 60 Hz & post & 4 & 16 \\
+\quad Butterworth order 2, 80 Hz & post & 4 & 12 \\
+\quad Butterworth order 2, 100 Hz & post & 4 & 9 \\
+\quad Butterworth order 4, 15 Hz & post & 4 & 105 \\
+\quad Butterworth order 4, 20 Hz & post & 4 & 79 \\
+\quad Butterworth order 4, 25 Hz & post & 4 & 63 \\
+\quad Butterworth order 4, 30 Hz & post & 4 & 52 \\
+\quad Butterworth order 4, 40 Hz & post & 4 & 39 \\
+\quad Butterworth order 4, 50 Hz & post & 4 & 31 \\
+\quad Butterworth order 4, 60 Hz & post & 4 & 26 \\
+\quad Butterworth order 4, 80 Hz & post & 4 & 20 \\
+\quad Butterworth order 4, 100 Hz & post & 4 & 16 \\
+\quad Moving average, 4 samples & post & 4 & 3 \\
+\quad Moving average, 8 samples & post & 4 & 7 \\
+\quad Moving average, 12 samples & post & 4 & 11 \\
+\quad Moving average, 16 samples & post & 4 & 15 \\
+\quad Moving average, 20 samples & post & 4 & 19 \\
+\bottomrule
+\end{tabular}
+\end{table}

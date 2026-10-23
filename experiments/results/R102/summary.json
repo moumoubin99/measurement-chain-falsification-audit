@@ -1,0 +1,6008 @@
+{
+ "n_replicates": 156,
+ "n_expected": 156,
+ "complete": true,
+ "truths": [
+  "light",
+  "medium",
+  "heavy",
+  "b2",
+  "vel_adaptive",
+  "kalman_rts"
+ ],
+ "reps_per_truth": 26,
+ "config": {
+  "R_bm": 4,
+  "B_adm": 500,
+  "B_band": 1000,
+  "K": 6,
+  "oracle": true,
+  "n812_scale": 0.11363636363636363,
+  "code_hash": "127d438f03feaf0e543b42f67427b803403bb7ba651ef97456db89b4abed2fa7"
+ },
+ "wall_s": 102809.15088993916,
+ "cpu_h": 386.24564621283497,
+ "rep_cpu_s_mean": 8913.361066450037,
+ "summary": {
+  "light": {
+   "N": 26,
+   "retention": [
+    0.9615384615384616,
+    [
+     0.8110722092608273,
+     0.9931780150820144
+    ]
+   ],
+   "calibration_failure": [
+    0.038461538461538464,
+    [
+     0.006821984917985538,
+     0.18892779073917254
+    ]
+   ],
+   "support_failure": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "conclusive": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "equivalence": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "mismatch": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "oracle_status": {
+    "resolved": 25,
+    "unresolved": 0,
+    "not_run": 0,
+    "calibration_failure": 1
+   },
+   "false_equivalence_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.13319225276039096
+    ]
+   ],
+   "false_equivalence_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_equivalence_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "false_mismatch_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.13319225276039096
+    ]
+   ],
+   "false_mismatch_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_mismatch_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "unresolved": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "band_coverage_per_member": {
+    "6": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "14": {
+     "n": 22,
+     "plugin_n": 22,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.8513451233948545,
+      1.0
+     ],
+     "assessed_n": 22,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "22": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "30": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "38": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "46": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "54": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "62": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "70": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "78": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9583333333333334,
+     "plugin_wilson": [
+      0.7975819334115467,
+      0.9926065439164028
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9583333333333334,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "86": {
+     "n": 22,
+     "plugin_n": 22,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.8513451233948545,
+      1.0
+     ],
+     "assessed_n": 22,
+     "definite_bounds": [
+      0.9545454545454546,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "94": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "102": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "110": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "118": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "126": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "134": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "142": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9583333333333334,
+     "plugin_wilson": [
+      0.7975819334115467,
+      0.9926065439164028
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9583333333333334,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "150": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9583333333333334,
+     "plugin_wilson": [
+      0.7975819334115467,
+      0.9926065439164028
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9583333333333334,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "158": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "166": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "174": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "182": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "186": {
+     "n": 22,
+     "plugin_n": 22,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.8513451233948545,
+      1.0
+     ],
+     "assessed_n": 22,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "190": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "194": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "198": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "202": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "206": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "210": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "214": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "218": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "222": {
+     "n": 22,
+     "plugin_n": 22,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.8513451233948545,
+      1.0
+     ],
+     "assessed_n": 22,
+     "definite_bounds": [
+      0.9545454545454546,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "226": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "230": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "234": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "238": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "242": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "246": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "250": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "254": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "258": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "262": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "266": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "270": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "274": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    }
+   },
+   "band_coverage_pooled": {
+    "plugin": [
+     0.931345980126468,
+     [
+      0.8248193917655523,
+      1.0
+     ]
+    ],
+    "definite_lower": [
+     0.9295392953929539,
+     [
+      0.8220739936267567,
+      1.0
+     ]
+    ],
+    "definite_upper": [
+     0.9367660343270099,
+     [
+      0.8379629629629629,
+      1.0
+     ]
+    ],
+    "n_reps": 25,
+    "band_unavailable_frac": 0.0
+   },
+   "simultaneous_coverage_plugin": {
+    "rate": 0.92,
+    "wilson": [
+     0.7503389087653979,
+     0.9777795989158738
+    ],
+    "n_assessed": 25,
+    "n_unavailable": 0
+   },
+   "simultaneous_coverage_definite_bounds": {
+    "bounds": [
+     0.88,
+     0.92
+    ],
+    "n_assessed": 25,
+    "n_unavailable": 0
+   },
+   "ambiguity_q": [
+    0.19752072686941224,
+    0.29185689216726374,
+    0.3158774111151045
+   ],
+   "ambiguity_n_excluded": 1,
+   "A_size_q": [
+    39.5,
+    46.0,
+    46.0
+   ]
+  },
+  "medium": {
+   "N": 26,
+   "retention": [
+    0.7692307692307693,
+    [
+     0.5794844576151241,
+     0.889661506584867
+    ]
+   ],
+   "calibration_failure": [
+    0.07692307692307693,
+    [
+     0.0213550882794125,
+     0.24141553940631577
+    ]
+   ],
+   "support_failure": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "conclusive": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "equivalence": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "mismatch": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "oracle_status": {
+    "resolved": 24,
+    "unresolved": 0,
+    "not_run": 0,
+    "calibration_failure": 2
+   },
+   "false_equivalence_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.13797620655132792
+    ]
+   ],
+   "false_equivalence_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_equivalence_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "false_mismatch_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.13797620655132792
+    ]
+   ],
+   "false_mismatch_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_mismatch_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "unresolved": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "band_coverage_per_member": {
+    "6": {
+     "n": 14,
+     "plugin_n": 14,
+     "plugin": 0.9285714285714286,
+     "plugin_wilson": [
+      0.6853129533326209,
+      0.9872777848933957
+     ],
+     "assessed_n": 14,
+     "definite_bounds": [
+      0.9285714285714286,
+      0.9285714285714286
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "14": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.6461200862787544,
+      0.9851349057603305
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "22": {
+     "n": 14,
+     "plugin_n": 14,
+     "plugin": 0.9285714285714286,
+     "plugin_wilson": [
+      0.6853129533326209,
+      0.9872777848933957
+     ],
+     "assessed_n": 14,
+     "definite_bounds": [
+      0.9285714285714286,
+      0.9285714285714286
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "30": {
+     "n": 17,
+     "plugin_n": 17,
+     "plugin": 0.9411764705882353,
+     "plugin_wilson": [
+      0.7301796914154303,
+      0.9895395991310502
+     ],
+     "assessed_n": 17,
+     "definite_bounds": [
+      0.9411764705882353,
+      0.9411764705882353
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "38": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.95,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "46": {
+     "n": 21,
+     "plugin_n": 21,
+     "plugin": 0.9523809523809523,
+     "plugin_wilson": [
+      0.7733063972991618,
+      0.9915440122838988
+     ],
+     "assessed_n": 21,
+     "definite_bounds": [
+      0.9523809523809523,
+      0.9523809523809523
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "54": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 0.9444444444444444,
+     "plugin_wilson": [
+      0.7424269900391908,
+      0.990124809131223
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      0.9444444444444444,
+      0.9444444444444444
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "62": {
+     "n": 16,
+     "plugin_n": 16,
+     "plugin": 0.9375,
+     "plugin_wilson": [
+      0.716712622018518,
+      0.9888806553587528
+     ],
+     "assessed_n": 16,
+     "definite_bounds": [
+      0.9375,
+      0.9375
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "70": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.6461200862787544,
+      0.9851349057603305
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "78": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.6461200862787544,
+      0.9851349057603305
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "86": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.8333333333333334,
+     "plugin_wilson": [
+      0.5519691353881888,
+      0.9530348582430792
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.8333333333333334,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "94": {
+     "n": 15,
+     "plugin_n": 15,
+     "plugin": 0.9333333333333333,
+     "plugin_wilson": [
+      0.7018346989112435,
+      0.9881331046384677
+     ],
+     "assessed_n": 15,
+     "definite_bounds": [
+      0.9333333333333333,
+      0.9333333333333333
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "102": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.9473684210526315,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "110": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.95,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "118": {
+     "n": 22,
+     "plugin_n": 22,
+     "plugin": 0.9545454545454546,
+     "plugin_wilson": [
+      0.7820195397089796,
+      0.991930572468161
+     ],
+     "assessed_n": 22,
+     "definite_bounds": [
+      0.9545454545454546,
+      0.9545454545454546
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "126": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.95,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "134": {
+     "n": 15,
+     "plugin_n": 15,
+     "plugin": 0.9333333333333333,
+     "plugin_wilson": [
+      0.7018346989112435,
+      0.9881331046384677
+     ],
+     "assessed_n": 15,
+     "definite_bounds": [
+      0.9333333333333333,
+      0.9333333333333333
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "142": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.6461200862787544,
+      0.9851349057603305
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "150": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.6461200862787544,
+      0.9851349057603305
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "158": {
+     "n": 14,
+     "plugin_n": 14,
+     "plugin": 0.9285714285714286,
+     "plugin_wilson": [
+      0.6853129533326209,
+      0.9872777848933957
+     ],
+     "assessed_n": 14,
+     "definite_bounds": [
+      0.9285714285714286,
+      0.9285714285714286
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "166": {
+     "n": 16,
+     "plugin_n": 16,
+     "plugin": 0.9375,
+     "plugin_wilson": [
+      0.716712622018518,
+      0.9888806553587528
+     ],
+     "assessed_n": 16,
+     "definite_bounds": [
+      0.9375,
+      0.9375
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "174": {
+     "n": 16,
+     "plugin_n": 16,
+     "plugin": 0.9375,
+     "plugin_wilson": [
+      0.716712622018518,
+      0.9888806553587528
+     ],
+     "assessed_n": 16,
+     "definite_bounds": [
+      0.9375,
+      0.9375
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "182": {
+     "n": 15,
+     "plugin_n": 15,
+     "plugin": 0.9333333333333333,
+     "plugin_wilson": [
+      0.7018346989112435,
+      0.9881331046384677
+     ],
+     "assessed_n": 15,
+     "definite_bounds": [
+      0.9333333333333333,
+      0.9333333333333333
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "186": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.6461200862787544,
+      0.9851349057603305
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "190": {
+     "n": 14,
+     "plugin_n": 14,
+     "plugin": 0.9285714285714286,
+     "plugin_wilson": [
+      0.6853129533326209,
+      0.9872777848933957
+     ],
+     "assessed_n": 14,
+     "definite_bounds": [
+      0.9285714285714286,
+      0.9285714285714286
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "194": {
+     "n": 16,
+     "plugin_n": 16,
+     "plugin": 0.9375,
+     "plugin_wilson": [
+      0.716712622018518,
+      0.9888806553587528
+     ],
+     "assessed_n": 16,
+     "definite_bounds": [
+      0.9375,
+      0.9375
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "198": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.95,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "202": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.95,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "206": {
+     "n": 16,
+     "plugin_n": 16,
+     "plugin": 0.9375,
+     "plugin_wilson": [
+      0.716712622018518,
+      0.9888806553587528
+     ],
+     "assessed_n": 16,
+     "definite_bounds": [
+      0.9375,
+      0.9375
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "210": {
+     "n": 16,
+     "plugin_n": 16,
+     "plugin": 0.9375,
+     "plugin_wilson": [
+      0.716712622018518,
+      0.9888806553587528
+     ],
+     "assessed_n": 16,
+     "definite_bounds": [
+      0.9375,
+      0.9375
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "214": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 0.9230769230769231,
+     "plugin_wilson": [
+      0.666860488286395,
+      0.986289578909774
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      0.9230769230769231,
+      0.9230769230769231
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "218": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 0.9230769230769231,
+     "plugin_wilson": [
+      0.666860488286395,
+      0.986289578909774
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      0.9230769230769231,
+      0.9230769230769231
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "222": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.6461200862787544,
+      0.9851349057603305
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.8333333333333334,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "226": {
+     "n": 14,
+     "plugin_n": 14,
+     "plugin": 0.9285714285714286,
+     "plugin_wilson": [
+      0.6853129533326209,
+      0.9872777848933957
+     ],
+     "assessed_n": 14,
+     "definite_bounds": [
+      0.9285714285714286,
+      0.9285714285714286
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "230": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.9473684210526315,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "234": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.95,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "238": {
+     "n": 22,
+     "plugin_n": 22,
+     "plugin": 0.9545454545454546,
+     "plugin_wilson": [
+      0.7820195397089796,
+      0.991930572468161
+     ],
+     "assessed_n": 22,
+     "definite_bounds": [
+      0.9545454545454546,
+      0.9545454545454546
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "242": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.9473684210526315,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "246": {
+     "n": 16,
+     "plugin_n": 16,
+     "plugin": 0.9375,
+     "plugin_wilson": [
+      0.716712622018518,
+      0.9888806553587528
+     ],
+     "assessed_n": 16,
+     "definite_bounds": [
+      0.9375,
+      0.9375
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "250": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.6461200862787544,
+      0.9851349057603305
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "254": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.6461200862787544,
+      0.9851349057603305
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "258": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 0.9230769230769231,
+     "plugin_wilson": [
+      0.666860488286395,
+      0.986289578909774
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      0.9230769230769231,
+      0.9230769230769231
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "262": {
+     "n": 16,
+     "plugin_n": 16,
+     "plugin": 0.9375,
+     "plugin_wilson": [
+      0.716712622018518,
+      0.9888806553587528
+     ],
+     "assessed_n": 16,
+     "definite_bounds": [
+      0.9375,
+      0.9375
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "266": {
+     "n": 16,
+     "plugin_n": 16,
+     "plugin": 0.9375,
+     "plugin_wilson": [
+      0.716712622018518,
+      0.9888806553587528
+     ],
+     "assessed_n": 16,
+     "definite_bounds": [
+      0.9375,
+      0.9375
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "270": {
+     "n": 16,
+     "plugin_n": 16,
+     "plugin": 0.9375,
+     "plugin_wilson": [
+      0.716712622018518,
+      0.9888806553587528
+     ],
+     "assessed_n": 16,
+     "definite_bounds": [
+      0.9375,
+      0.9375
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "274": {
+     "n": 15,
+     "plugin_n": 15,
+     "plugin": 0.9333333333333333,
+     "plugin_wilson": [
+      0.7018346989112435,
+      0.9881331046384677
+     ],
+     "assessed_n": 15,
+     "definite_bounds": [
+      0.9333333333333333,
+      0.9333333333333333
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "3": {
+     "n": 8,
+     "plugin_n": 8,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.6755924316585924,
+      1.0
+     ],
+     "assessed_n": 8,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    }
+   },
+   "band_coverage_pooled": {
+    "plugin": [
+     0.9359673024523161,
+     [
+      0.8033649761977272,
+      1.0
+     ]
+    ],
+    "definite_lower": [
+     0.9346049046321526,
+     [
+      0.8017170057057802,
+      1.0
+     ]
+    ],
+    "definite_upper": [
+     0.9386920980926431,
+     [
+      0.8092966507824768,
+      1.0
+     ]
+    ],
+    "n_reps": 24,
+    "band_unavailable_frac": 0.0
+   },
+   "simultaneous_coverage_plugin": {
+    "rate": 0.9166666666666666,
+    "wilson": [
+     0.7415119762950233,
+     0.9768411849122034
+    ],
+    "n_assessed": 24,
+    "n_unavailable": 0
+   },
+   "simultaneous_coverage_definite_bounds": {
+    "bounds": [
+     0.9166666666666666,
+     0.9583333333333334
+    ],
+    "n_assessed": 24,
+    "n_unavailable": 0
+   },
+   "ambiguity_q": [
+    0.02625312364738637,
+    0.21962613733529412,
+    0.29737035645300125
+   ],
+   "ambiguity_n_excluded": 2,
+   "A_size_q": [
+    1.0,
+    31.5,
+    46.5
+   ]
+  },
+  "heavy": {
+   "N": 26,
+   "retention": [
+    0.5,
+    [
+     0.32060593402470916,
+     0.6793940659752908
+    ]
+   ],
+   "calibration_failure": [
+    0.19230769230769232,
+    [
+     0.08507061095122731,
+     0.3787625728202114
+    ]
+   ],
+   "support_failure": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "conclusive": [
+    0.3076923076923077,
+    [
+     0.16501315511905632,
+     0.4998825847380929
+    ]
+   ],
+   "equivalence": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "mismatch": [
+    0.3076923076923077,
+    [
+     0.16501315511905632,
+     0.4998825847380929
+    ]
+   ],
+   "oracle_status": {
+    "resolved": 21,
+    "unresolved": 0,
+    "not_run": 0,
+    "calibration_failure": 5
+   },
+   "false_equivalence_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.15463902098714374
+    ]
+   ],
+   "false_equivalence_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_equivalence_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "false_mismatch_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.15463902098714374
+    ]
+   ],
+   "false_mismatch_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_mismatch_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "unresolved": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "band_coverage_per_member": {
+    "3": {
+     "n": 9,
+     "plugin_n": 9,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.700854948272956,
+      1.0
+     ],
+     "assessed_n": 9,
+     "definite_bounds": [
+      0.8888888888888888,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "6": {
+     "n": 14,
+     "plugin_n": 14,
+     "plugin": 0.9285714285714286,
+     "plugin_wilson": [
+      0.6853129533326209,
+      0.9872777848933957
+     ],
+     "assessed_n": 14,
+     "definite_bounds": [
+      0.8571428571428571,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "14": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 0.9230769230769231,
+     "plugin_wilson": [
+      0.666860488286395,
+      0.986289578909774
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      0.8461538461538461,
+      0.9230769230769231
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "22": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 0.8333333333333334,
+     "plugin_wilson": [
+      0.6077796169796655,
+      0.9416342323981449
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      0.8333333333333334,
+      0.9444444444444444
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "30": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.7894736842105263,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "38": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.85,
+     "plugin_wilson": [
+      0.6395811333571357,
+      0.9476312545132735
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.8,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "46": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8421052631578947,
+     "plugin_wilson": [
+      0.6243452453548595,
+      0.9447952840464915
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.7894736842105263,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "54": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8421052631578947,
+     "plugin_wilson": [
+      0.6243452453548595,
+      0.9447952840464915
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8421052631578947,
+      0.8421052631578947
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "62": {
+     "n": 17,
+     "plugin_n": 17,
+     "plugin": 0.8235294117647058,
+     "plugin_wilson": [
+      0.5897054122922163,
+      0.938088734108536
+     ],
+     "assessed_n": 17,
+     "definite_bounds": [
+      0.8235294117647058,
+      0.9411764705882353
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "70": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 0.9230769230769231,
+     "plugin_wilson": [
+      0.666860488286395,
+      0.986289578909774
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      0.9230769230769231,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "78": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 0.9230769230769231,
+     "plugin_wilson": [
+      0.666860488286395,
+      0.986289578909774
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      0.9230769230769231,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "86": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.7719046248681998,
+      1.0
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "94": {
+     "n": 17,
+     "plugin_n": 17,
+     "plugin": 0.8823529411764706,
+     "plugin_wilson": [
+      0.6566364919396065,
+      0.9671202265340099
+     ],
+     "assessed_n": 17,
+     "definite_bounds": [
+      0.8823529411764706,
+      0.9411764705882353
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "102": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8421052631578947,
+     "plugin_wilson": [
+      0.6243452453548595,
+      0.9447952840464915
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.7894736842105263,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "110": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.8,
+     "plugin_wilson": [
+      0.583982565906683,
+      0.9193423379822393
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.8,
+      0.9
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "118": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.85,
+     "plugin_wilson": [
+      0.6395811333571357,
+      0.9476312545132735
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.8,
+      0.9
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "126": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8421052631578947,
+     "plugin_wilson": [
+      0.6243452453548595,
+      0.9447952840464915
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.7894736842105263,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "134": {
+     "n": 15,
+     "plugin_n": 15,
+     "plugin": 0.8666666666666667,
+     "plugin_wilson": [
+      0.6211801694601944,
+      0.9626387412357151
+     ],
+     "assessed_n": 15,
+     "definite_bounds": [
+      0.8666666666666667,
+      0.9333333333333333
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "142": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.6461200862787544,
+      0.9851349057603305
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.9166666666666666,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "150": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.6461200862787544,
+      0.9851349057603305
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.9166666666666666,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "158": {
+     "n": 15,
+     "plugin_n": 15,
+     "plugin": 0.8,
+     "plugin_wilson": [
+      0.5481455107594471,
+      0.9295245070826608
+     ],
+     "assessed_n": 15,
+     "definite_bounds": [
+      0.8,
+      0.9333333333333333
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "166": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8421052631578947,
+     "plugin_wilson": [
+      0.6243452453548595,
+      0.9447952840464915
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8421052631578947,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "174": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.7894736842105263,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "182": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 0.8333333333333334,
+     "plugin_wilson": [
+      0.6077796169796655,
+      0.9416342323981449
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      0.7222222222222222,
+      0.9444444444444444
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "186": {
+     "n": 12,
+     "plugin_n": 12,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.7575059904469021,
+      1.0
+     ],
+     "assessed_n": 12,
+     "definite_bounds": [
+      0.9166666666666666,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "190": {
+     "n": 17,
+     "plugin_n": 17,
+     "plugin": 0.8235294117647058,
+     "plugin_wilson": [
+      0.5897054122922163,
+      0.938088734108536
+     ],
+     "assessed_n": 17,
+     "definite_bounds": [
+      0.8235294117647058,
+      0.9411764705882353
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "194": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.7894736842105263,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "198": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.85,
+     "plugin_wilson": [
+      0.6395811333571357,
+      0.9476312545132735
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.8,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "202": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8421052631578947,
+     "plugin_wilson": [
+      0.6243452453548595,
+      0.9447952840464915
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.7894736842105263,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "206": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8421052631578947,
+     "plugin_wilson": [
+      0.6243452453548595,
+      0.9447952840464915
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8421052631578947,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "210": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 0.8333333333333334,
+     "plugin_wilson": [
+      0.6077796169796655,
+      0.9416342323981449
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      0.8333333333333334,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "214": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 0.9230769230769231,
+     "plugin_wilson": [
+      0.666860488286395,
+      0.986289578909774
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      0.9230769230769231,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "218": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 0.9230769230769231,
+     "plugin_wilson": [
+      0.666860488286395,
+      0.986289578909774
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      0.9230769230769231,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "222": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.7719046248681998,
+      1.0
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      0.9230769230769231,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "226": {
+     "n": 17,
+     "plugin_n": 17,
+     "plugin": 0.8823529411764706,
+     "plugin_wilson": [
+      0.6566364919396065,
+      0.9671202265340099
+     ],
+     "assessed_n": 17,
+     "definite_bounds": [
+      0.8235294117647058,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "230": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8421052631578947,
+     "plugin_wilson": [
+      0.6243452453548595,
+      0.9447952840464915
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.7894736842105263,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "234": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.85,
+     "plugin_wilson": [
+      0.6395811333571357,
+      0.9476312545132735
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.8,
+      0.9
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "238": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.85,
+     "plugin_wilson": [
+      0.6395811333571357,
+      0.9476312545132735
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.8,
+      0.9
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "242": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8421052631578947,
+     "plugin_wilson": [
+      0.6243452453548595,
+      0.9447952840464915
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.7894736842105263,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "246": {
+     "n": 17,
+     "plugin_n": 17,
+     "plugin": 0.8235294117647058,
+     "plugin_wilson": [
+      0.5897054122922163,
+      0.938088734108536
+     ],
+     "assessed_n": 17,
+     "definite_bounds": [
+      0.8235294117647058,
+      0.9411764705882353
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "250": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 0.9230769230769231,
+     "plugin_wilson": [
+      0.666860488286395,
+      0.986289578909774
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      0.9230769230769231,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "254": {
+     "n": 13,
+     "plugin_n": 13,
+     "plugin": 0.9230769230769231,
+     "plugin_wilson": [
+      0.666860488286395,
+      0.986289578909774
+     ],
+     "assessed_n": 13,
+     "definite_bounds": [
+      0.9230769230769231,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "258": {
+     "n": 14,
+     "plugin_n": 14,
+     "plugin": 0.8571428571428571,
+     "plugin_wilson": [
+      0.600586202762663,
+      0.959906079092351
+     ],
+     "assessed_n": 14,
+     "definite_bounds": [
+      0.8571428571428571,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "262": {
+     "n": 17,
+     "plugin_n": 17,
+     "plugin": 0.8235294117647058,
+     "plugin_wilson": [
+      0.5897054122922163,
+      0.938088734108536
+     ],
+     "assessed_n": 17,
+     "definite_bounds": [
+      0.8235294117647058,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "266": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8421052631578947,
+     "plugin_wilson": [
+      0.6243452453548595,
+      0.9447952840464915
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.7894736842105263,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "270": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8421052631578947,
+     "plugin_wilson": [
+      0.6243452453548595,
+      0.9447952840464915
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.7894736842105263,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "274": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 0.8333333333333334,
+     "plugin_wilson": [
+      0.6077796169796655,
+      0.9416342323981449
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      0.8333333333333334,
+      0.9444444444444444
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "7": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "63": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "71": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "79": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "135": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "143": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "151": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "207": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "211": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "215": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "219": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "243": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "247": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "251": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "255": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "259": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "263": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    }
+   },
+   "band_coverage_pooled": {
+    "plugin": [
+     0.8707653701380176,
+     [
+      0.720648479190316,
+      0.9894469504436254
+     ]
+    ],
+    "definite_lower": [
+     0.8368883312421581,
+     [
+      0.6784404276863214,
+      0.9664219011892409
+     ]
+    ],
+    "definite_upper": [
+     0.9510664993726474,
+     [
+      0.8620155640474485,
+      1.0
+     ]
+    ],
+    "n_reps": 21,
+    "band_unavailable_frac": 0.0
+   },
+   "simultaneous_coverage_plugin": {
+    "rate": 0.8095238095238095,
+    "wilson": [
+     0.5999943512871267,
+     0.9233243500065463
+    ],
+    "n_assessed": 21,
+    "n_unavailable": 0
+   },
+   "simultaneous_coverage_definite_bounds": {
+    "bounds": [
+     0.7619047619047619,
+     0.8571428571428571
+    ],
+    "n_assessed": 21,
+    "n_unavailable": 0
+   },
+   "ambiguity_q": [
+    0.09575621472092255,
+    0.2881585017280397,
+    0.30729148526360817
+   ],
+   "ambiguity_n_excluded": 5,
+   "A_size_q": [
+    0.0,
+    38.0,
+    47.0
+   ]
+  },
+  "b2": {
+   "N": 26,
+   "retention": [
+    0.8846153846153846,
+    [
+     0.7102409662092934,
+     0.9599675540764081
+    ]
+   ],
+   "calibration_failure": [
+    0.11538461538461539,
+    [
+     0.040032445923591814,
+     0.28975903379070655
+    ]
+   ],
+   "support_failure": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "conclusive": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "equivalence": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "mismatch": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "oracle_status": {
+    "resolved": 23,
+    "unresolved": 0,
+    "not_run": 0,
+    "calibration_failure": 3
+   },
+   "false_equivalence_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.14311662038507353
+    ]
+   ],
+   "false_equivalence_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_equivalence_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "false_mismatch_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.14311662038507353
+    ]
+   ],
+   "false_mismatch_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_mismatch_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "unresolved": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "band_coverage_per_member": {
+    "6": {
+     "n": 22,
+     "plugin_n": 22,
+     "plugin": 0.9545454545454546,
+     "plugin_wilson": [
+      0.7820195397089796,
+      0.991930572468161
+     ],
+     "assessed_n": 22,
+     "definite_bounds": [
+      0.9545454545454546,
+      0.9545454545454546
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "14": {
+     "n": 22,
+     "plugin_n": 22,
+     "plugin": 0.8636363636363636,
+     "plugin_wilson": [
+      0.6666501265111675,
+      0.9525099632305449
+     ],
+     "assessed_n": 22,
+     "definite_bounds": [
+      0.8181818181818182,
+      0.8636363636363636
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "22": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9130434782608695,
+     "plugin_wilson": [
+      0.7320401874258483,
+      0.9758199957343082
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9130434782608696
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "30": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "38": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "46": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "54": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "62": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "70": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.95,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "78": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.8241207740667156,
+      1.0
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "86": {
+     "n": 21,
+     "plugin_n": 21,
+     "plugin": 0.8571428571428571,
+     "plugin_wilson": [
+      0.653639395331373,
+      0.9501898753920957
+     ],
+     "assessed_n": 21,
+     "definite_bounds": [
+      0.8571428571428571,
+      0.8571428571428572
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "94": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9130434782608695,
+     "plugin_wilson": [
+      0.7320401874258483,
+      0.9758199957343082
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.8695652173913043,
+      0.9130434782608696
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "102": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9130434782608695,
+     "plugin_wilson": [
+      0.7320401874258483,
+      0.9758199957343082
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9130434782608696
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "110": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9130434782608695,
+     "plugin_wilson": [
+      0.7320401874258483,
+      0.9758199957343082
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "118": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "126": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "134": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "142": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.8241207740667156,
+      1.0
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "150": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.8241207740667156,
+      1.0
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "158": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "166": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "174": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "182": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "186": {
+     "n": 22,
+     "plugin_n": 22,
+     "plugin": 0.8636363636363636,
+     "plugin_wilson": [
+      0.6666501265111675,
+      0.9525099632305449
+     ],
+     "assessed_n": 22,
+     "definite_bounds": [
+      0.8181818181818182,
+      0.8636363636363636
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "190": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9130434782608695,
+     "plugin_wilson": [
+      0.7320401874258483,
+      0.9758199957343082
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "194": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "198": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "202": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "206": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "210": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "214": {
+     "n": 22,
+     "plugin_n": 22,
+     "plugin": 0.9545454545454546,
+     "plugin_wilson": [
+      0.7820195397089796,
+      0.991930572468161
+     ],
+     "assessed_n": 22,
+     "definite_bounds": [
+      0.9545454545454546,
+      0.9545454545454546
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "218": {
+     "n": 21,
+     "plugin_n": 21,
+     "plugin": 0.9523809523809523,
+     "plugin_wilson": [
+      0.7733063972991618,
+      0.9915440122838988
+     ],
+     "assessed_n": 21,
+     "definite_bounds": [
+      0.9523809523809523,
+      0.9523809523809523
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "222": {
+     "n": 22,
+     "plugin_n": 22,
+     "plugin": 0.8181818181818182,
+     "plugin_wilson": [
+      0.6148339238492879,
+      0.9269311546747105
+     ],
+     "assessed_n": 22,
+     "definite_bounds": [
+      0.8181818181818182,
+      0.8181818181818181
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "226": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9130434782608695,
+     "plugin_wilson": [
+      0.7320401874258483,
+      0.9758199957343082
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.8695652173913043,
+      0.9130434782608696
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "230": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9130434782608695,
+     "plugin_wilson": [
+      0.7320401874258483,
+      0.9758199957343082
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9130434782608696
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "234": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "238": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "242": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "246": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "250": {
+     "n": 21,
+     "plugin_n": 21,
+     "plugin": 0.9523809523809523,
+     "plugin_wilson": [
+      0.7733063972991618,
+      0.9915440122838988
+     ],
+     "assessed_n": 21,
+     "definite_bounds": [
+      0.9523809523809523,
+      0.9523809523809523
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "254": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.95,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "258": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "262": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "266": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "270": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9565217391304348,
+     "plugin_wilson": [
+      0.7900884474454931,
+      0.9922833339420488
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9565217391304348,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "274": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9130434782608695,
+     "plugin_wilson": [
+      0.7320401874258483,
+      0.9758199957343082
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "3": {
+     "n": 5,
+     "plugin_n": 5,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.5655175313406071,
+      1.0
+     ],
+     "assessed_n": 5,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "2": {
+     "n": 4,
+     "plugin_n": 4,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.5101091596030786,
+      0.9999999999999999
+     ],
+     "assessed_n": 4,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "7": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "15": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "71": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "79": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "87": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "135": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "143": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "151": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "187": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "211": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "215": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "219": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "223": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "251": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "255": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "259": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    }
+   },
+   "band_coverage_pooled": {
+    "plugin": [
+     0.9429115128449096,
+     [
+      0.8447180281488724,
+      0.9980602296851805
+     ]
+    ],
+    "definite_lower": [
+     0.9295908658420552,
+     [
+      0.8238974403320651,
+      0.9961204593703611
+     ]
+    ],
+    "definite_upper": [
+     0.9457659372026641,
+     [
+      0.8506583444682841,
+      0.9980602296851805
+     ]
+    ],
+    "n_reps": 23,
+    "band_unavailable_frac": 0.0
+   },
+   "simultaneous_coverage_plugin": {
+    "rate": 0.8260869565217391,
+    "wilson": [
+     0.6286235218500337,
+     0.9302134648553532
+    ],
+    "n_assessed": 23,
+    "n_unavailable": 0
+   },
+   "simultaneous_coverage_definite_bounds": {
+    "bounds": [
+     0.8260869565217391,
+     0.8260869565217391
+    ],
+    "n_assessed": 23,
+    "n_unavailable": 0
+   },
+   "ambiguity_q": [
+    0.2755543301846263,
+    0.2962998829341572,
+    0.30908203783862265
+   ],
+   "ambiguity_n_excluded": 3,
+   "A_size_q": [
+    19.0,
+    46.0,
+    47.5
+   ]
+  },
+  "vel_adaptive": {
+   "N": 26,
+   "calibration_failure": [
+    0.038461538461538464,
+    [
+     0.006821984917985538,
+     0.18892779073917254
+    ]
+   ],
+   "support_failure": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "conclusive": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "equivalence": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "mismatch": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "oracle_status": {
+    "resolved": 25,
+    "unresolved": 0,
+    "not_run": 0,
+    "calibration_failure": 1
+   },
+   "false_equivalence_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.13319225276039096
+    ]
+   ],
+   "false_equivalence_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_equivalence_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "false_mismatch_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.13319225276039096
+    ]
+   ],
+   "false_mismatch_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_mismatch_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "unresolved": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "band_coverage_per_member": {
+    "2": {
+     "n": 2,
+     "plugin_n": 2,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.3423802239546494,
+      1.0
+     ],
+     "assessed_n": 2,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "6": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "14": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.875,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "22": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "30": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.96,
+     "plugin_wilson": [
+      0.8045593608838223,
+      0.9929037665766179
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "38": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.96,
+     "plugin_wilson": [
+      0.8045593608838223,
+      0.9929037665766179
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "46": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "54": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "62": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9166666666666666
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "70": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "78": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9130434782608695,
+     "plugin_wilson": [
+      0.7320401874258483,
+      0.9758199957343082
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9130434782608696
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "86": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9583333333333334,
+     "plugin_wilson": [
+      0.7975819334115467,
+      0.9926065439164028
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "94": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9583333333333334,
+     "plugin_wilson": [
+      0.7975819334115467,
+      0.9926065439164028
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9583333333333334,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "102": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "110": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.84,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "118": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.875,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "126": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "134": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "142": {
+     "n": 23,
+     "plugin_n": 23,
+     "plugin": 0.9130434782608695,
+     "plugin_wilson": [
+      0.7320401874258483,
+      0.9758199957343082
+     ],
+     "assessed_n": 23,
+     "definite_bounds": [
+      0.9130434782608695,
+      0.9565217391304348
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "150": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "158": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.875,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "166": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "174": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.96,
+     "plugin_wilson": [
+      0.8045593608838223,
+      0.9929037665766179
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "182": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.866807747239609,
+      1.0
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "186": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.875,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "190": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "194": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.96,
+     "plugin_wilson": [
+      0.8045593608838223,
+      0.9929037665766179
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "198": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.96,
+     "plugin_wilson": [
+      0.8045593608838223,
+      0.9929037665766179
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "202": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "206": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "210": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "214": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "218": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "222": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9583333333333334,
+     "plugin_wilson": [
+      0.7975819334115467,
+      0.9926065439164028
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "226": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9583333333333334,
+     "plugin_wilson": [
+      0.7975819334115467,
+      0.9926065439164028
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "230": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.84,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "234": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.96,
+     "plugin_wilson": [
+      0.8045593608838223,
+      0.9929037665766179
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "238": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "242": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "246": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "250": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9166666666666666,
+     "plugin_wilson": [
+      0.7415119762950233,
+      0.9768411849122034
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.875,
+      0.9583333333333334
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "254": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.92
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "258": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "262": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.92,
+     "plugin_wilson": [
+      0.7503389087653979,
+      0.9777795989158738
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "266": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.96,
+     "plugin_wilson": [
+      0.8045593608838223,
+      0.9929037665766179
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.88,
+      0.96
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "270": {
+     "n": 25,
+     "plugin_n": 25,
+     "plugin": 0.96,
+     "plugin_wilson": [
+      0.8045593608838223,
+      0.9929037665766179
+     ],
+     "assessed_n": 25,
+     "definite_bounds": [
+      0.92,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "274": {
+     "n": 24,
+     "plugin_n": 24,
+     "plugin": 0.9583333333333334,
+     "plugin_wilson": [
+      0.7975819334115467,
+      0.9926065439164028
+     ],
+     "assessed_n": 24,
+     "definite_bounds": [
+      0.9166666666666666,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    }
+   },
+   "band_coverage_pooled": {
+    "plugin": [
+     0.9316770186335404,
+     [
+      0.8444610682356537,
+      0.995475113122172
+     ]
+    ],
+    "definite_lower": [
+     0.8988464951197871,
+     [
+      0.7948950625901624,
+      0.9851257048872178
+     ]
+    ],
+    "definite_upper": [
+     0.963620230700976,
+     [
+      0.8998198439317804,
+      1.0
+     ]
+    ],
+    "n_reps": 25,
+    "band_unavailable_frac": 0.0
+   },
+   "simultaneous_coverage_plugin": {
+    "rate": 0.84,
+    "wilson": [
+     0.6534637822439173,
+     0.9359654858790167
+    ],
+    "n_assessed": 25,
+    "n_unavailable": 0
+   },
+   "simultaneous_coverage_definite_bounds": {
+    "bounds": [
+     0.8,
+     0.88
+    ],
+    "n_assessed": 25,
+    "n_unavailable": 0
+   },
+   "ambiguity_q": [
+    0.264467997769153,
+    0.28722374538249973,
+    0.3051184387086726
+   ],
+   "ambiguity_n_excluded": 1,
+   "A_size_q": [
+    40.5,
+    46.0,
+    46.0
+   ]
+  },
+  "kalman_rts": {
+   "N": 26,
+   "calibration_failure": [
+    0.19230769230769232,
+    [
+     0.08507061095122731,
+     0.3787625728202114
+    ]
+   ],
+   "support_failure": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "conclusive": [
+    0.038461538461538464,
+    [
+     0.006821984917985538,
+     0.18892779073917254
+    ]
+   ],
+   "equivalence": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "mismatch": [
+    0.038461538461538464,
+    [
+     0.006821984917985538,
+     0.18892779073917254
+    ]
+   ],
+   "oracle_status": {
+    "resolved": 21,
+    "unresolved": 0,
+    "not_run": 0,
+    "calibration_failure": 5
+   },
+   "false_equivalence_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.15463902098714374
+    ]
+   ],
+   "false_equivalence_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_equivalence_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "false_mismatch_cond_resolved": [
+    0.0,
+    [
+     0.0,
+     0.15463902098714374
+    ]
+   ],
+   "false_mismatch_bounds": [
+    0.0,
+    0.0
+   ],
+   "false_mismatch_bounds_wilson": [
+    [
+     0.0,
+     0.12872892362858793
+    ],
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "unresolved": [
+    0.0,
+    [
+     0.0,
+     0.12872892362858793
+    ]
+   ],
+   "band_coverage_per_member": {
+    "3": {
+     "n": 5,
+     "plugin_n": 5,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.5655175313406071,
+      1.0
+     ],
+     "assessed_n": 5,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "6": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.9473684210526315,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "14": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 0.8888888888888888,
+     "plugin_wilson": [
+      0.6720023466389031,
+      0.9689804776352089
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      0.8888888888888888,
+      0.8888888888888888
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "22": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "30": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "38": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "46": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.9,
+     "plugin_wilson": [
+      0.6989663528135878,
+      0.9721335190383086
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.9,
+      0.9
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "54": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.9,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "62": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "70": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.9473684210526315,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "78": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 0.9444444444444444,
+     "plugin_wilson": [
+      0.7424269900391908,
+      0.990124809131223
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      0.9444444444444444,
+      0.9444444444444444
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "86": {
+     "n": 17,
+     "plugin_n": 17,
+     "plugin": 0.8823529411764706,
+     "plugin_wilson": [
+      0.6566364919396065,
+      0.9671202265340099
+     ],
+     "assessed_n": 17,
+     "definite_bounds": [
+      0.8235294117647058,
+      0.9411764705882353
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "94": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "102": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "110": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "118": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.9,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "126": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.95,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "134": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "142": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 0.9444444444444444,
+     "plugin_wilson": [
+      0.7424269900391908,
+      0.990124809131223
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      0.9444444444444444,
+      0.9444444444444444
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "150": {
+     "n": 17,
+     "plugin_n": 17,
+     "plugin": 0.9411764705882353,
+     "plugin_wilson": [
+      0.7301796914154303,
+      0.9895395991310502
+     ],
+     "assessed_n": 17,
+     "definite_bounds": [
+      0.9411764705882353,
+      0.9411764705882353
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "158": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "166": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "174": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "182": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "186": {
+     "n": 18,
+     "plugin_n": 18,
+     "plugin": 0.8888888888888888,
+     "plugin_wilson": [
+      0.6720023466389031,
+      0.9689804776352089
+     ],
+     "assessed_n": 18,
+     "definite_bounds": [
+      0.8888888888888888,
+      0.8888888888888888
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "190": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "194": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "198": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "202": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.9,
+     "plugin_wilson": [
+      0.6989663528135878,
+      0.9721335190383086
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.9,
+      0.9
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "206": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.9,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "210": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "214": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.9473684210526315,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "218": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "222": {
+     "n": 17,
+     "plugin_n": 17,
+     "plugin": 0.8823529411764706,
+     "plugin_wilson": [
+      0.6566364919396065,
+      0.9671202265340099
+     ],
+     "assessed_n": 17,
+     "definite_bounds": [
+      0.8823529411764706,
+      0.9411764705882353
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "226": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "230": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "234": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.9,
+     "plugin_wilson": [
+      0.6989663528135878,
+      0.9721335190383086
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.9,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "238": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.9,
+     "plugin_wilson": [
+      0.6989663528135878,
+      0.9721335190383086
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.9,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "242": {
+     "n": 20,
+     "plugin_n": 20,
+     "plugin": 0.95,
+     "plugin_wilson": [
+      0.7638688045357189,
+      0.9911185512976646
+     ],
+     "assessed_n": 20,
+     "definite_bounds": [
+      0.9,
+      0.95
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "246": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.9473684210526315,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "250": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.9473684210526315,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "254": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.9473684210526315,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "258": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.9473684210526315,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "262": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.9473684210526315,
+     "plugin_wilson": [
+      0.7536126862526763,
+      0.9906480060413981
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.9473684210526316
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "266": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "270": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "274": {
+     "n": 19,
+     "plugin_n": 19,
+     "plugin": 0.8947368421052632,
+     "plugin_wilson": [
+      0.6860591708809097,
+      0.9706414399668032
+     ],
+     "assessed_n": 19,
+     "definite_bounds": [
+      0.8947368421052632,
+      0.8947368421052632
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    },
+    "2": {
+     "n": 1,
+     "plugin_n": 1,
+     "plugin": 1.0,
+     "plugin_wilson": [
+      0.2065493117918027,
+      1.0
+     ],
+     "assessed_n": 1,
+     "definite_bounds": [
+      1.0,
+      1.0
+     ],
+     "band_unavailable_frac": 0.0,
+     "oracle_unavailable_frac": 0.0
+    }
+   },
+   "band_coverage_pooled": {
+    "plugin": [
+     0.9180887372013652,
+     [
+      0.7885057471264367,
+      1.0
+     ]
+    ],
+    "definite_lower": [
+     0.906712172923777,
+     [
+      0.7675863159003898,
+      1.0
+     ]
+    ],
+    "definite_upper": [
+     0.9328782707622298,
+     [
+      0.8248548705445258,
+      1.0
+     ]
+    ],
+    "n_reps": 21,
+    "band_unavailable_frac": 0.0
+   },
+   "simultaneous_coverage_plugin": {
+    "rate": 0.9047619047619048,
+    "wilson": [
+     0.7108586073515344,
+     0.9734812328017302
+    ],
+    "n_assessed": 21,
+    "n_unavailable": 0
+   },
+   "simultaneous_coverage_definite_bounds": {
+    "bounds": [
+     0.8571428571428571,
+     0.9047619047619048
+    ],
+    "n_assessed": 21,
+    "n_unavailable": 0
+   },
+   "ambiguity_q": [
+    0.1683743935754487,
+    0.2863923211411059,
+    0.3092945294354692
+   ],
+   "ambiguity_n_excluded": 5,
+   "A_size_q": [
+    0.0,
+    46.0,
+    47.0
+   ]
+  }
+ },
+ "_resources": {
+  "cpu_s_self": 17.545196,
+  "cpu_s_children": 1390532.915891,
+  "peak_rss_mib_self": 794.10546875,
+  "peak_rss_mib_children_max": 980.87109375,
+  "wall_s": 102821.15992713114
+ },
+ "_provisional": false
+}

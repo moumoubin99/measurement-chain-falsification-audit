@@ -1,0 +1,68 @@
+% latex_includes.tex -- figure environments for main.tex and supplementary.tex.
+% Every data figure is produced by a script in paper/figures/ that reads data/derived.json
+% (written by derive_data.py from experiments/results/** and experiments/kincost/chain.py)
+% or the result files directly. Generator paths are given beside each \includegraphics.
+
+\newcommand{\figOverview}{%
+\begin{figure}[!htbp]
+\centering
+% generator: /figedit (editable SVG); provenance and edit log in figedit-tasks/fig1/DELIVERY.md
+\includegraphics[width=\textwidth]{fig1_overview.pdf}
+\caption{\textbf{A falsifiable measurement-matching test for comparing saccade kinematics across eye trackers, and its observed outcome.} Desktop recordings (GazeBase, EyeLink~1000, 1000\,Hz) are passed through each of 276 declared measurement chains that simulate the headset instrument (GazeBaseVR, SMI tracker in an HTC Vive, 250\,Hz). Every chain applies donor re-timing, a linear filter (identity, Butterworth or moving average; branch B1 filtered at 250\,Hz, branch B2 at 1000\,Hz), $1/f^{\alpha}$ noise before or after the filter, pooled-renewal missingness and a 4\,ms grid. Chains are calibrated only on 12 fixation-hold statistics in three blocks (scale, coordinates 1--4; spectral shape, 5--10; missingness, 11--12) and admitted if the max-T statistic $\Lambda$ does not exceed its bootstrap critical value $c$. Only admitted chains would enter the saccade peak-velocity endpoint (Stage~2, grey, dashed). The decision rule was code-locked on the development split (D) before any confirmatory saccade quantity was computed. On the real device pair no chain is admitted on D (0/276), nor on the confirmatory (C) fixation holds (0/10 lock-specified; 0/15 development-selected candidates assessed post hoc), so the procedure stops without licensing a device comparison. The procedure itself is evaluated on a benchmark with known truths built from real GazeBase recordings, in which a heavy-filter truth produced 8 of 26 whole-procedure false mismatches (\cref{tab:benchmark}).}
+\label{fig:overview}
+\end{figure}}
+
+\newcommand{\figCalibration}{%
+\begin{figure}[!htbp]
+\centering
+% generator: paper/figures/gen_fig2_calibration.py (reads data/derived.json; R004, R203, A006, R102)
+\includegraphics[width=\textwidth]{fig2_calibration.pdf}
+\caption{\textbf{No member of the declared 276-chain family passes fixation calibration.} \textbf{a},~Development split (D): $\Lambda/c$ for every member (log scale), grouped by noise exponent $\alpha$ and by noise placement (after or before the filter); colour gives filter type, marker gives branch (B1 filtered at 250\,Hz, B2 at 1000\,Hz), open markers mark pre-filter noise. Labels give the minimum per $\alpha$ (69 members each). \textbf{b},~Confirmatory split (C) fixation holds: the 10 lock-specified development-best members (R203; 4.44--4.49) and the 15 development-selected candidates assessed post hoc (A006; 4.41--4.49). These are nested candidate subsets on the same split, not independent replications. In both panels the dashed line marks the admission threshold $\Lambda/c = 1$. For D and C, rows bound by the median gap fraction share one value of $\Lambda$ (8.43 on D, 15.57 on C), so their ordering reflects only $c$ (\cref{tab:admissibility}). The grey band spans the smallest $\Lambda/c$ of the 11 benchmark replicates in which calibration failed although an in-family truth generated the data (1.03 to the observed maximum 1.51; not a bound); the six replicates of out-of-family truths with no admissible member (1.04--1.24) lie inside it. The band is descriptive context only: the benchmark data share the family's missingness model by construction, whereas the real-data minima are set by the missingness coordinate. Sources: \texttt{R004/calibration.json}, \texttt{R203/c\_hold\_lambda.json}, \texttt{A006/c\_adm.json}, \texttt{R102/reps/*.json}.}
+\label{fig:calibration}
+\end{figure}}
+
+\newcommand{\figDiagnostics}{%
+\begin{figure}[!htbp]
+\centering
+% generator: paper/figures/gen_fig3_diagnostics.py (reads data/derived.json; A006/gap_pv.json, R004/gap_pv_diagnostics.json, R004/failure_profile.json, A006/d_adm.json, A006/c_adm.json)
+\includegraphics[width=\textwidth]{fig3_diagnostics.pdf}
+\caption{\textbf{Post hoc diagnostics of the calibration failure.} \textbf{a},~Missingness (development split): median over participants of the gap fraction on the 4\,ms grid. Native GazeBase (raw invalid samples at the native 1000\,Hz, before the grid, 1.01\%) rises to 1.09\% after donor re-timing and the 4\,ms grid, and to 2.05\% after the pooled renewal mask is added (A006 re-simulation, $n = 100$, $R = 4$). The member-invariant calibration point estimate (R004) is 1.94\%; a gap-free synthetic source with the same renewal mask gives 0.65\%; the GazeBaseVR target (dotted line) is 0.20\%. \textbf{b},~Clean-window test on coordinates 1--10 with its own critical value $\cten$: $\Lten/\cten$ for all 276 members on D and for the 15 development-selected candidates on C (log scale). Dots are filtered chains, open circles the identity chain; the grey band and dashed line are as in \cref{fig:calibration} (the band comes from the 12-coordinate benchmark test and is descriptive context for this 10-coordinate statistic). On D the minimum is 1.23 (1.46 among filtered chains), within the benchmark false-failure range; on C every candidate fails (2.67 identity; 4.54--4.98 filtered), binding on 4--10\,Hz band power. \textbf{c},~Standardised hold discrepancy $z$ across the 12 coordinates for the best member per noise exponent on D (lowest full-test $\Lambda/c$ within each exponent; member names in the legend), with the three coordinate blocks labelled (1--4, scale, profiled by the noise scale $\eta$; 5--10, clean-window spectral shape; 11--12, missingness). Dashed lines mark $\pm$ the median critical value $c = 3.05$. The gap-fraction value ($z = 8.43$) is the same for every member. The grey bars on coordinates 5--10 give the range, over the four in-family benchmark truths, of the post hoc window-placement offset in D units (A006, \cref{fig:identification}d; Supplementary Table~S4); the real comparison inherits this placement asymmetry, so deviations within the bars cannot be attributed to the chains. The lag-1 overshoot of the coloured-noise members is opposite in sign to the offset; the lag-2 undershoot has the same sign. Sources as listed; \cref{tab:admissibility} and Supplementary Table~S2 give the numbers.}
+\label{fig:diagnostics}
+\end{figure}}
+
+\newcommand{\figIdentification}{%
+\begin{figure}[!htbp]
+\centering
+% generator: paper/figures/gen_fig4_identification.py (reads data/derived.json; R005/existence.json, R102/reps/*.json, R102/summary.json, A006/window.json)
+\includegraphics[width=\textwidth]{fig4_identification.pdf}
+\caption{\textbf{Fixation-hold summaries do not identify the filter, and hence peak velocity.} \textbf{a},~Analytic construction (R005; synthetic minimum-jerk saccades, not real data): detected PV@10$^\circ$ relative to the analytic latent peak velocity for four chains whose hold coordinates 1--10 are near-identical (maximum relative deviation from identity 0, $2.9\times10^{-12}$, $9.0\times10^{-5}$ and 0); their detected PV@10$^\circ$ spans 14.5\% (max/min $-$ 1). A Butterworth 15\,Hz chain is shown for contrast; its hold coordinates are not matched (deviation 1.07). \textbf{b},~Benchmark with known truths: residual PV ambiguity per replicate (max $-$ min of member contrasts $\dhat$ over $\Ar$; replicates with $\Ar = \emptyA$ excluded), with median and quartiles per truth. The dashed line marks the full equivalence width $\ln(1.05/0.95) \approx 0.100$. \textbf{c},~Retention of the generating chain given $\Ar \ne \emptyA$ against its 2\% step-settling time, with 95\% Wilson intervals. \textbf{d},~Same x-axis: post hoc window-placement offset (A006), the largest refitted hold discrepancy on coordinates 5--10 between native-style and degraded-style window placement, standardised by the development-split (filled) and confirmatory-split (open) standard errors; the dashed line is the median clean-window critical value $\cten = 2.77$ (D and C alike). The offset rises with settling time; it stays below $\cten$ in D units but exceeds it in C units, because the same population offset is larger relative to the smaller confirmatory standard errors. It reflects the combined shift of window timing and window count (median 22 versus 40 windows per recording). Sources: \texttt{R005/existence.json}, \texttt{R102/reps/*.json}, \texttt{R102/summary.json}, \texttt{A006/window.json}.}
+\label{fig:identification}
+\end{figure}}
+
+\newcommand{\figNative}{%
+\begin{figure}[!htbp]
+\centering
+% generator: paper/figures/gen_fig5_native.py (reads data/derived.json; A006/gap_pv.json, R104/ladder.json)
+\includegraphics[width=\textwidth]{fig5_native.pdf}
+\caption{\textbf{Descriptive anchors that remain reportable under the Stage-1 stop (development split only).} \textbf{a},~Native amplitude-standardised peak velocity at 10$^\circ$ in GazeBase and GazeBaseVR, from the prespecified spline main sequence and the linear 8--12$^\circ$ sensitivity estimator, with 95\% CIs and the number of saccade-eligible/total participants. The unadjusted GazeBaseVR/GazeBase ratio is shown with its 90\% bootstrap band. \textbf{b},~Within-GazeBase degradation ladder: peak velocity of trial-matched events of 8--12$^\circ$ native amplitude after successive measurement steps, as a ratio to native GazeBase, with 95\% bootstrap percentile CIs; the filter rung uses a fixed placeholder chain (Butterworth order 4, 30\,Hz) because no chain was admitted. The ladder illustrates measurement sensitivity; it is not a decomposition of the native gap ($\Adm = \emptyA$). Sources: \texttt{A006/gap\_pv.json}, \texttt{R104/ladder.json}.}
+\label{fig:native}
+\end{figure}}
+
+% ---------------- Supplementary figures ----------------
+\newcommand{\figSzprofiles}{%
+\begin{figure}[ht]
+\centering
+% generator: paper/figures/gen_supp_figs.py (reads R004/failure_profile.json)
+\includegraphics[width=\textwidth]{figS1_zprofiles.pdf}
+\caption{\textbf{Hold-discrepancy profiles over the declared family (development split).} \textbf{a},~Standardised discrepancy $z$ across the 12 hold coordinates for the six members with the lowest $\Lambda/c$ (value in brackets); all six share $\Lambda = 8.43$, set by the member-invariant gap-fraction coordinate, so their order reflects only $c$. \textbf{b},~Median $|z|$ over all 276 members and, per coordinate, the smallest $|z|$ attained by any member (a marginal minimum: different members attain it on different coordinates). Coordinate blocks as in main-text Fig.~3c. Sources: \texttt{R004/failure\_profile.json} (panel a and marginal minima) and \texttt{A006/d\_adm.json}, field \texttt{z\_median\_abs} (median $|z|$, from the exact reproduction of the R004 calibration).}
+\label{fig:s1}
+\end{figure}}
+
+\newcommand{\figSrfive}{%
+\begin{figure}[ht]
+\centering
+% generator: paper/figures/gen_supp_figs.py (reads R005/existence.json)
+\includegraphics[width=\textwidth]{figS2_r005.pdf}
+\caption{\textbf{Analytic construction (R005) in detail.} \textbf{a},~Hold coordinates 1--10 per member (core members: circles; the unmatched Butterworth 15\,Hz boundary member: crosses), with each member's 2\% step-settling time. The four core members agree to a maximum relative spread of $9.0\times10^{-5}$. \textbf{b},~Detected peak velocity relative to the analytic latent peak velocity of each simulated saccade, at 5, 10 and 15$^\circ$; at 10$^\circ$ the core members differ by 14.5\%. Synthetic minimum-jerk saccades, $P = 40$ simulated participants, $R = 4$. Source: \texttt{R005/existence.json}.}
+\label{fig:s2}
+\end{figure}}

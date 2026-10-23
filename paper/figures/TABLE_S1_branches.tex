@@ -1,0 +1,24 @@
+\begin{table}[ht]
+\centering
+\caption{\textbf{Hold admissibility of the declared family on the development split, by branch.} $\Lambda/c$ is the max-T statistic over the 12 hold coordinates (less those dropped by the zero-variability rule, Supplementary Note~S3) divided by its bootstrap critical value ($B = 2000$); a member is admissible iff $\Lambda/c \le 1$. No branch contains an admissible member. All 276 members: min 2.716, median 2.996, max 23.46. Coordinate attaining the maximum (counts over members): \texttt{ac1} 144, \texttt{gap\_frac\_median} 99, \texttt{bp\_60\_125} 22, \texttt{ac2} 11. Source: \texttt{R004/failure\_profile.json}.}
+\label{tab:s1}
+\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Branch & Members & min $\Lambda/c$ & median $\Lambda/c$ \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Noise exponent}} \\
+\quad $\alpha = 0$ & 69 & 2.716 & 2.772 \\
+\quad $\alpha = 0.5$ & 69 & 2.739 & 2.763 \\
+\quad $\alpha = 1$ & 69 & 2.746 & 2.964 \\
+\quad $\alpha = 1.5$ & 69 & 3.935 & 5.318 \\
+\multicolumn{4}{@{}l}{\textit{Filtering rate}} \\
+\quad B1 (filtered at 250 Hz) & 184 & 2.716 & 5.317 \\
+\quad B2 (filtered at 1000 Hz) & 92 & 2.716 & 2.780 \\
+\multicolumn{4}{@{}l}{\textit{Filter type}} \\
+\quad Identity & 8 & 2.765 & 2.780 \\
+\quad Butterworth & 216 & 2.716 & 3.956 \\
+\quad Moving average & 52 & 2.728 & 2.931 \\
+\bottomrule
+\end{tabular}
+\end{table}

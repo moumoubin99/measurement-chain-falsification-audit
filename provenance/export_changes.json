@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "scientific_payload_changes": [],
+  "id_changes": [],
+  "source_files": "source_files.json",
+  "added": [
+    "Review documentation, inventory, privacy audit, manifest and bounded reconstruction/verification tools"
+  ],
+  "excluded": [
+    {
+      "pattern": "experiments/results/R105/R105.bundle",
+      "reason": "Private historical Git bundle; locked source and commit hash exported separately"
+    },
+    {
+      "pattern": "experiments/kincost/runs/lock_git.sh",
+      "reason": "Historical bundle-creation helper; not among the 17 locked files, not needed for verification or figure reconstruction"
+    },
+    {
+      "pattern": "experiments/kincost/runs/throttle.py",
+      "reason": "Server-specific process-control helper with a private absolute path; not among the 17 locked files"
+    },
+    {
+      "pattern": "logs, status files, .aris, .claude, chat traces, Git history, connections, credentials",
+      "reason": "Private operational material, excluded by allowlist"
+    },
+    {
+      "pattern": "raw archives, raw CSV rows, participant_details.xlsx, caches/pickles, models/environments",
+      "reason": "Not part of the derived-data review deposit; official raw sources linked separately"
+    },
+    {
+      "pattern": "manuscript PDF/DOCX and paper source sections",
+      "reason": "Manuscript delivery is separate from this data/code repository"
+    },
+    {
+      "pattern": "__pycache__, compiled bytecode, historical plot PDF files",
+      "reason": "Runtime/build artifacts excluded; PNG/SVG previews and generators retained"
+    }
+  ]
+}

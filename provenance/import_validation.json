@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "python": "3.13.11",
+  "imported_modules": [
+    "kincost",
+    "kincost.benchmark",
+    "kincost.calibrate",
+    "kincost.chain",
+    "kincost.detector",
+    "kincost.endpoint",
+    "kincost.fastfit",
+    "kincost.holds",
+    "kincost.io_data",
+    "kincost.pipeline",
+    "kincost.synth",
+    "kincost.runs.common",
+    "kincost.runs.r105_lock"
+  ],
+  "module_count": 13,
+  "syntax_checked_python_files": 39,
+  "family_members": 276,
+  "r105_verification_passed": true,
+  "combined_code_sha256": "127d438f03feaf0e543b42f67427b803403bb7ba651ef97456db89b4abed2fa7",
+  "png_metadata_review": [
+    {
+      "file": "paper/figures/fig1_overview.png",
+      "size": [
+        2700,
+        1485
+      ],
+      "metadata_keys": [],
+      "personal_author_metadata_present": false
+    },
+    {
+      "file": "paper/figures/fig2_calibration.png",
+      "size": [
+        2064,
+        879
+      ],
+      "metadata_keys": [
+        "Software",
+        "dpi"
+      ],
+      "personal_author_metadata_present": false
+    },
+    {
+      "file": "paper/figures/fig3_diagnostics.png",
+      "size": [
+        2180,
+        1545
+      ],
+      "metadata_keys": [
+        "Software",
+        "dpi"
+      ],
+      "personal_author_metadata_present": false
+    },
+    {
+      "file": "paper/figures/fig4_identification.png",
+      "size": [
+        2279,
+        1311
+      ],
+      "metadata_keys": [
+        "Software",
+        "dpi"
+      ],
+      "personal_author_metadata_present": false
+    },
+    {
+      "file": "paper/figures/fig5_native.png",
+      "size": [
+        1822,
+        800
+      ],
+      "metadata_keys": [
+        "Software",
+        "dpi"
+      ],
+      "personal_author_metadata_present": false
+    },
+    {
+      "file": "paper/figures/figS1_zprofiles.png",
+      "size": [
+        1992,
+        836
+      ],
+      "metadata_keys": [
+        "Software",
+        "dpi"
+      ],
+      "personal_author_metadata_present": false
+    },
+    {
+      "file": "paper/figures/figS2_r005.png",
+      "size": [
+        1821,
+        777
+      ],
+      "metadata_keys": [
+        "Software",
+        "dpi"
+      ],
+      "personal_author_metadata_present": false
+    }
+  ],
+  "run_scripts_note": "Eleven core package modules and the common/r105_lock helpers import successfully; historical analysis/run entrypoints are syntax-checked, not executed.",
+  "experimental_functions_executed": false,
+  "raw_data_accessed": false,
+  "unsafe_analysis_entrypoints_imported": false
+}

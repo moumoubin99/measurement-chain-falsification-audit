@@ -1,0 +1,24 @@
+\begin{table}[ht]
+\centering
+\caption{\textbf{Datasets, protocols and participant splits.} Protocol parameters are from the dataset descriptors\cite{gazebase,gazebasevr}; recording counts and splits from \texttt{R001/summary.json} and \texttt{R001/gb\_summary.json}; hold-eligible counts from \texttt{R004/calibration.json} (D) and \texttt{R203/c\_hold\_lambda.json} (C); saccade-eligible counts from \texttt{A006/gap\_pv.json}. Both tasks are random-saccade (RAN) tasks. $^{a}$Over all recordings, at the native sampling rate and before any re-timing; development-split gap fractions on the common 4\,ms grid are given in the Results (missingness diagnostic).}
+\label{tab:datasets}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{6.2cm}>{\raggedright\arraybackslash}p{4.5cm}>{\raggedright\arraybackslash}p{4.3cm}@{}}
+\toprule
+ & GazeBase (desktop) & GazeBaseVR (headset) \\
+\midrule
+Eye tracker & EyeLink 1000, chin/forehead rest & SMI tracker in HTC Vive \\
+Nominal sampling & 1000 Hz & 250 Hz (timestamp jitter) \\
+Eye analysed (primary) & left (monocular recording) & left (binocular recording) \\
+Recordings (round 1, session 1, RAN) & 322 & 407 \\
+Target range (horizontal / vertical) & $\pm15^\circ$ / $\pm9^\circ$ & $\pm15^\circ$ / $\pm10^\circ$ \\
+Target dwell time & 1 s & 1--1.5 s (uniform) \\
+Minimum target jump & $2^\circ$ & $3^\circ$ \\
+Background & black & light grey \\
+Development (D) / confirmatory (C) participants & 100 / 222 & 50 / 357 \\
+Hold-eligible ($\geq 10$ windows), D / C & 98 / 208 & 50 / 355 \\
+Saccade-eligible for native PV@10$^\circ$ (D, spline) & 100/100 & 48/50 \\
+Median raw invalid-sample fraction (all recordings, native rate)$^{a}$ & 1.09\% & 0.21\% \\
+\bottomrule
+\end{tabular}
+\end{table}

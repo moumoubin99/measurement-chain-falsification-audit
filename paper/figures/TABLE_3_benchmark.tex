@@ -1,0 +1,42 @@
+\begin{table}[ht]
+\centering
+\caption{\textbf{Operating characteristics of the two-stage procedure on the benchmark with known truths} (26 replicates per truth, each a random partition of the 100 development participants into four disjoint arms of 25; real GazeBase recordings degraded by a known chain; in-family truths are post-filter-noise $\alpha = 1$ members). Every row states its denominator. \emph{Whole-procedure} quantities count all 26 replicates; \emph{conditional} quantities condition on $A_r \ne \varnothing$ and judge each Stage-2 decision against the oracle computed on the same $A_r$. Intervals are 95\% Wilson intervals; $|A_r|$ and ambiguity are reported as median and quartiles. Sources: \texttt{R102/summary.json} and \texttt{R102/reps/*.json} (counts).}
+\label{tab:benchmark}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.6cm}cccccc@{}}
+\toprule
+ & \multicolumn{4}{c}{In family} & \multicolumn{2}{c}{Out of family} \\
+\cmidrule(lr){2-5}\cmidrule(l){6-7}
+ & Light & Medium & Heavy & B2 & Vel.-adaptive & Kalman RTS \\
+\midrule
+Generating-chain settling time (ms) & 16 & 52 & 104 & 39 & --- & --- \\
+$A_r = \varnothing$ (calibration failure), $k/26$ & 1 & 2 & 5 & 3 & 1 & 5 \\
+Truth retained in $A_r$, whole procedure, $k/26$ & 25/26 & 20/26 & 13/26 & 23/26 & n/a & n/a \\
+Truth retained given $A_r \ne \varnothing$ & 25/25 & 20/24 & 13/21 & 23/23 & n/a & n/a \\
+\quad 95\% Wilson interval & [0.87, 1.00] & [0.64, 0.93] & [0.41, 0.79] & [0.86, 1.00] &  &  \\
+$|A_r|$ (all 26 replicates), median & 46 & 32 & 38 & 46 & 46 & 46 \\
+\quad quartiles & [46, 46] & [10, 46] & [10, 46] & [42, 46] & [46, 46] & [17, 46] \\
+PV ambiguity (log units), median$^{a}$ & 0.29 & 0.22 & 0.29 & 0.30 & 0.29 & 0.29 \\
+\quad quartiles & [0.27, 0.31] & [0.06, 0.29] & [0.14, 0.30] & [0.29, 0.30] & [0.28, 0.30] & [0.28, 0.29] \\
+\addlinespace
+\multicolumn{7}{@{}l}{\textit{Stage-2 decisions, $k/\#\{A_r \ne \varnothing\}$}} \\
+\quad INCONCLUSIVE (imprecise) & 25/25 & 21/24 & 6/21 & 22/23 & 25/25 & 2/21 \\
+\quad INCONCLUSIVE (assumption-sensitive) & 0/25 & 3/24 & 7/21 & 1/23 & 0/25 & 18/21 \\
+\quad MISMATCH & 0/25 & 0/24 & 8/21 & 0/23 & 0/25 & 1/21 \\
+\quad EQUIVALENCE & 0/25 & 0/24 & 0/21 & 0/23 & 0/25 & 0/21 \\
+Conditional false EQUIVALENCE or MISMATCH & 0/25 & 0/24 & 0/21 & 0/23 & 0/25 & 0/21 \\
+\quad 95\% Wilson upper limit$^{b}$ & 0.133 & 0.138 & 0.155 & 0.143 & 0.133 & 0.155 \\
+Whole-procedure false MISMATCH (true ratio 1), $k/26$ & 0/26 & 0/26 & 8/26 & 0/26 & 0/26 & 1/26 \\
+\addlinespace
+Simultaneous max-T coverage over $A_r$, replicates with $A_r \ne \varnothing$ (nominal 0.90) & 0.92 & 0.92 & 0.81 & 0.83 & 0.84 & 0.90 \\
+\quad 95\% Wilson interval & [0.75, 0.98] & [0.74, 0.98] & [0.60, 0.92] & [0.63, 0.93] & [0.65, 0.94] & [0.71, 0.97] \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\smallskip
+\raggedright\footnotesize
+$^{a}$Per replicate, the max $-$ min range of member PV contrasts $\hat\delta$ over $A_r$; replicates with $A_r = \varnothing$ are excluded. For scale, the full equivalence width is $\ln(1.05/0.95) \approx 0.100$. $^{b}$At the non-empty-$A_r$ denominators shown; counting all 26 replicates gives 0.129 per truth. Pooled over truths, 0/139 replicates with non-empty $A_r$ (0/156 counting empty $A_r$ as no decision). Retention is not defined for out-of-family truths (n/a).
+\end{table}

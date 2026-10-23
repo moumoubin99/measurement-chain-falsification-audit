@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "research_result_json_count": 207,
+  "plotting_json_count": 1,
+  "npz_count": 2,
+  "text_files_scanned": 277,
+  "official_public_pseudonyms_retained": true,
+  "raw_gaze_samples_distributed": false,
+  "private_demographics_distributed": false,
+  "new_identity_mapping_distributed": false,
+  "irreversible_anonymisation_claimed": false,
+  "limits": "An allowlist, complete JSON/NPZ schema review and pattern scan; public pseudonyms and summary features can remain linkable to upstream data.",
+  "hits": []
+}

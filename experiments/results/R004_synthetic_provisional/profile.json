@@ -1,0 +1,90 @@
+{
+ "timings": {
+  "gbvr_native_wall_s": 2.7084393529221416,
+  "gbvr_native_cpu_s": 21.656878465786576,
+  "cache_wall_s": 1296.3114874772727,
+  "cache_task_wall_s": 126369.58406167757,
+  "cache_cpu_s": 15178.162016719,
+  "adm_wall_s": 11435.201217222027,
+  "adm_task_wall_s": 1093526.0266332459,
+  "adm_cpu_s": 136322.420348842,
+  "bench_wall_s": 3488.279865605291
+ },
+ "rep_cpu_s_mean": 3339.407927114833,
+ "rep_timings": [
+  {
+   "pseudo_target_s": 3.2060495372861624,
+   "admissibility_s": 2255.378956535831,
+   "endpoint_s": 45.48390550678596,
+   "bands_s": 2.456145132891834,
+   "oracle_s": 1123.9555379021913,
+   "total_s": 3430.496924613137,
+   "cpu_s": 3430.491451035
+  },
+  {
+   "pseudo_target_s": 3.222237444948405,
+   "admissibility_s": 1995.201532493811,
+   "endpoint_s": 45.590290278661996,
+   "bands_s": 2.4555102991871536,
+   "oracle_s": 1125.206651381217,
+   "total_s": 3171.692790608853,
+   "cpu_s": 3171.6807036180003
+  },
+  {
+   "pseudo_target_s": 3.366682988125831,
+   "admissibility_s": 2166.4826838830486,
+   "endpoint_s": 45.67460584780201,
+   "bands_s": 2.4605752611532807,
+   "oracle_s": 1135.0004032426514,
+   "total_s": 3353.0022648130544,
+   "cpu_s": 3352.901840783
+  },
+  {
+   "pseudo_target_s": 3.260816656984389,
+   "admissibility_s": 2258.560131939128,
+   "endpoint_s": 46.548103774897754,
+   "bands_s": 2.4634571340866387,
+   "oracle_s": 1132.5582333346829,
+   "total_s": 3443.4073591269553,
+   "cpu_s": 3443.4052569269998
+  },
+  {
+   "pseudo_target_s": 3.9550623004324734,
+   "admissibility_s": 1966.8540075779893,
+   "endpoint_s": 46.022765272762626,
+   "bands_s": 2.4582106228917837,
+   "oracle_s": 1130.842555725947,
+   "total_s": 3150.1492754463106,
+   "cpu_s": 3149.990704994
+  },
+  {
+   "pseudo_target_s": 3.957781843841076,
+   "admissibility_s": 2302.7915641297586,
+   "endpoint_s": 46.01122802402824,
+   "bands_s": 2.441720937844366,
+   "oracle_s": 1132.8222689940594,
+   "total_s": 3488.04108359199,
+   "cpu_s": 3487.977605332
+  }
+ ],
+ "mean_A_bench": 46.0,
+ "calib_cpu_h": 42.08349510154472,
+ "bench_cpu_h_600": 556.5679878524722,
+ "total_projected_cpu_h": 605.651482954017,
+ "gate_cpu_h": 250.0,
+ "members_profiled": 276,
+ "member_scale": 1.0,
+ "note": "admissibility / cache costs scale with members; replicate cost scales with |A_r| (oracle)",
+ "within_gate": null,
+ "cpu_basis": "process_time per task (cache, admissibility, replicate); wall times reported separately",
+ "peak_tree_rss_mib": 97133.53515625,
+ "reps_60_per_truth_cpu_h": 383.02428781302797,
+ "_resources": {
+  "cpu_s_self": 120.639351,
+  "cpu_s_children": 171674.697301,
+  "peak_rss_mib_self": 963.12109375,
+  "peak_rss_mib_children_max": 1128.421875,
+  "wall_s": 16232.199112977833
+ },
+ "_provisional": true
+}

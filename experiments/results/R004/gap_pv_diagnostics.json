@@ -1,0 +1,67 @@
+{
+ "note": "Post-hoc descriptive (auto-review round 1). Gap-free synthetic sources isolate the timing/R4 and pooled-renewal components; the native-GB component requires GB data and is reported only as the raw-sample invalid fraction from the R001 GB audit.",
+ "native_gbvr_R4": {
+  "median_frac": 0.002034926206796846,
+  "mean_frac": 0.0060203085871130095,
+  "q75_frac": 0.007267322564366425,
+  "frac_zero": 0.32,
+  "mean_loglen": 2.9716351693157947
+ },
+ "native_gbvr_raw_invalid_median": 0.0018732498596228104,
+ "native_gb_raw_invalid": {
+  "median": 0.010937266076909202,
+  "q90": 0.048621630711892475
+ },
+ "donor_pool": {
+  "n_runs": 1259,
+  "n_gaps": 1211,
+  "run_mean": 988.0905480540112,
+  "run_median": 3.0,
+  "gap_mean": 5.104872006606111,
+  "gap_median": 2.0,
+  "pooled_raw_gap_frac": 0.004944856293613441,
+  "max_participant_gap_count_share": 0.3658243080625752,
+  "participant_R4_frac_max": 0.07969918828585071
+ },
+ "synthetic_gapfree_source": {
+  "timing_R4_only": {
+   "median_frac": 3.9571049819951724e-05,
+   "mean_frac": 0.00023228206244311662,
+   "q75_frac": 3.9571049819951724e-05,
+   "frac_zero": 0.0,
+   "mean_loglen": 2.143640102963593
+  },
+  "timing_R4_plus_renewal": {
+   "median_frac": 0.006529223220292034,
+   "mean_frac": 0.007690237822009418,
+   "q75_frac": 0.010941395275216651,
+   "frac_zero": 0.0,
+   "mean_loglen": 2.965912546345999
+  }
+ },
+ "degraded_gb_D_median_frac": 0.01943376072957318,
+ "native_gbvr_D_pv10": {
+  "spline_standardised": {
+   "logE": 5.798439762195811,
+   "pv_deg_s": 329.7846158716106,
+   "ci95_deg_s": [
+    319.5908138170656,
+    339.5097981184641
+   ],
+   "n_elig": 48,
+   "P": 50
+  },
+  "linear_8_12": {
+   "logE": 5.794569457627496,
+   "pv_deg_s": 328.5107157471512,
+   "ci95_deg_s": [
+    319.4370268365222,
+    337.64613963974773
+   ],
+   "n_elig": 47,
+   "P": 50
+  },
+  "note": "GB native counterpart requires GB data (server); C split not computed under the preregistered A = empty stopping rule."
+ },
+ "wall_s": 1.6476185321807861
+}

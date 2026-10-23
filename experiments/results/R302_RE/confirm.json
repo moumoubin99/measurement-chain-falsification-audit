@@ -1,0 +1,26 @@
+{
+ "n_gbvr": 357,
+ "n_gb": 222,
+ "R": 20,
+ "B": 2000,
+ "stream": 5000,
+ "A": [],
+ "eye": "right",
+ "gb_session": 1,
+ "gb_missing_session": [],
+ "diagnostic": true,
+ "decision": "CALIBRATION FAILURE",
+ "tag": "",
+ "note": "A empty: no C-split endpoint test is run",
+ "timings": {
+  "vr_s": 154.20808330504224
+ },
+ "_resources": {
+  "cpu_s_self": 22.76159,
+  "cpu_s_children": 141.982688,
+  "peak_rss_mib_self": 306.80078125,
+  "peak_rss_mib_children_max": 216.9765625,
+  "wall_s": 287.5026912931353
+ },
+ "_provisional": false
+}
